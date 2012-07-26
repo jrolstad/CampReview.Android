@@ -12,31 +12,11 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/GetRegionsCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/ICommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/Request.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/Response.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/core/models/Campground.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/core/models/Region.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/IRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/ISpecification.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/Specification.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/HomeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/ui/viewmodels/RegionViewModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/viewmodels/Campground.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/viewmodels/Region.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/src/campreview/android/data/tests/InMemoryRepositoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/tests.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/campreview/android/HomeActivity.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="Initial implementation of repository">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/src/campreview/android/data/tests/InMemoryRepositoryTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/campreview.android.iml" afterPath="$PROJECT_DIR$/campreview.android.iml" />
     </list>
     <ignored path="campreview.android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,59 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/IRepository.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InMemoryRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="55" selection-start="658" selection-end="692" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#191#199#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ISpecification.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/ISpecification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="33" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Specification.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/Specification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InMemoryRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/src/campreview/android/data/tests/InMemoryRepositoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="33" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="15" selection-start="534" selection-end="534" vertical-scroll-proportion="0.33007336">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HomeActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+            <state line="16" column="14" selection-start="397" selection-end="397" vertical-scroll-proportion="0.48723897">
               <folding />
             </state>
           </provider>
@@ -214,9 +145,9 @@
         <option value="$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/data/IRepository.java" />
         <option value="$PROJECT_DIR$/tests/tests/campreview/android/data/InMemoryRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/tests/src/campreview/android/ui/activities/HomeActivityTest.java" />
         <option value="$PROJECT_DIR$/tests/src/campreview/android/data/tests/InMemoryRepositoryTests.java" />
         <option value="$PROJECT_DIR$/tests/src/campreview/android/data/tests/InMemoryRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/tests/src/campreview/android/ui/activities/HomeActivityTest.java" />
       </list>
     </option>
   </component>
@@ -251,26 +182,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -291,6 +202,26 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="campreview.android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -329,7 +260,7 @@
       <recent name="campreview.android.commands" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Tests.InMemoryRepositoryTest">
+  <component name="RunManager" selected="Android Tests.tests">
     <configuration default="false" name="GetRegionsCommandTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="campreview.android" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -371,28 +302,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="InMemoryRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="tests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="campreview.android.data.tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.campreview.android.data.InMemoryRepositoryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="InMemoryRepositoryTest" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
       <module name="tests" />
       <option name="TESTING_TYPE" value="2" />
@@ -408,6 +317,28 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="InMemoryRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="campreview.android" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="src.campreview.android.data.tests" />
+      <option name="MAIN_CLASS_NAME" value="campreview.android.data.tests.InMemoryRepositoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -616,16 +547,18 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.ui" />
-      <item index="1" class="java.lang.String" itemvalue="Android Application.campreview.android" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GetRegionsCommandTest" />
-      <item index="3" class="java.lang.String" itemvalue="Android Tests.testGet()" />
-      <item index="4" class="java.lang.String" itemvalue="Android Tests.tests" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.InMemoryRepositoryTest" />
-      <item index="6" class="java.lang.String" itemvalue="Android Tests.InMemoryRepositoryTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GetRegionsCommandTest" />
+      <item index="1" class="java.lang.String" itemvalue="Android Tests.testGet()" />
+      <item index="2" class="java.lang.String" itemvalue="Android Tests.InMemoryRepositoryTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InMemoryRepositoryTest" />
+      <item index="4" class="java.lang.String" itemvalue="Android Application.ui" />
+      <item index="5" class="java.lang.String" itemvalue="Android Application.campreview.android" />
+      <item index="6" class="java.lang.String" itemvalue="Android Tests.tests" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -661,17 +594,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="804" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5007184" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.49425286" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30028737" sideWeight="0.25036603" order="1" side_tool="true" content_ui="tabs" />
@@ -748,26 +681,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/core/models/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="67" selection-end="116" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/viewmodels/RegionViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/ICommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/GetRegionsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="60" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" />
@@ -776,6 +689,35 @@
     <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="55" selection-start="658" selection-end="692" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/ISpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/Specification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/Response.java">
@@ -795,51 +737,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/ISpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/Specification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="658" selection-end="692" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#191#199#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/IRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/src/campreview/android/data/tests/InMemoryRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="534" selection-end="534" vertical-scroll-proportion="0.33007336">
+        <state line="16" column="14" selection-start="397" selection-end="397" vertical-scroll-proportion="0.48723897">
           <folding />
         </state>
       </provider>
