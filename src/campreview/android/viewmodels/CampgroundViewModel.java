@@ -1,6 +1,6 @@
 package campreview.android.viewmodels;
 
-public class Campground {
+public class CampgroundViewModel {
 
     String CampgroundId;
 

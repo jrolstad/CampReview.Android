@@ -1,4 +1,4 @@
-package campreview.android.data;
+package campreview.android.Specifications;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,6 +9,6 @@ package campreview.android.data;
  */
 public interface ISpecification<T> {
 
-    boolean Matches(Object item);
+    boolean Matches(T item);
 }
 
