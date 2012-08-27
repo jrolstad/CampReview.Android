@@ -1,11 +1,17 @@
 package campreview.android.mappers;
 
-/**
- * Created with IntelliJ IDEA.
- * User: rolstad
- * Date: 8/27/12
- * Time: 7:19 AM
- * To change this template use File | Settings | File Templates.
- */
-public class RegionViewModelMapper {
+import campreview.android.core.models.Region;
+import campreview.android.viewmodels.RegionViewModel;
+
+
+public class RegionViewModelMapper implements IMapper<Region,RegionViewModel> {
+
+    @Override
+    public RegionViewModel Map(Region toMap) {
+        RegionViewModel result = new RegionViewModel();
+        result.Name = toMap.Name;
+        result.RegionId = toMap.RegionId;
+
+        return result;
+    }
 }

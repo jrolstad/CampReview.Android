@@ -1,37 +1,49 @@
 package campreview.android.data;
 
+import campreview.android.Specifications.ISpecification;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class InMemoryRepository implements IRepository {
+public class InMemoryRepository<T> implements IRepository<T> {
 
-    private List<Object> _data = new ArrayList<Object>();
+    private List<T> _data = new ArrayList<T>();
 
-    public <T> List<T> Find(ISpecification<T> searchSpecifications) {
+    public List<T> Find(ISpecification<T> searchSpecifications) {
         List<T> returnList = new ArrayList<T>();
 
-        for(Object value : _data){
+        for(T value : _data){
             if(searchSpecifications.Matches(value)) {
-                T typedValue = (T) value;
-                returnList.add(typedValue);
+                returnList.add(value);
              }
         }
-        return returnList;  //To change body of implemented methods use File | Settings | File Templates.
+
+
+        return returnList;
     }
 
-    public <T> T Get(ISpecification<T> getSpecification) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public T Get(ISpecification<T> getSpecification) {
+        List<T> results = Find(getSpecification);
+
+        if(results.size() > 0)
+        {
+            return results.get(0);
+        }
+        else
+        {
+            return null;
+        }
     }
 
-    public <T> void Save(T itemToSave) {
+    public void Save(T itemToSave) {
         if(_data.contains(itemToSave))
             _data.remove(itemToSave);
 
         _data.add(itemToSave);
     }
 
-    public <T> void Delete(T itemToDelete) {
+    public void Delete(T itemToDelete) {
         if(_data.contains(itemToDelete))
             _data.remove(itemToDelete);
     }

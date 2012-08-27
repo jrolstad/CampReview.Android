@@ -1,17 +1,19 @@
 package campreview.android.data;
 
+import campreview.android.Specifications.ISpecification;
+
 import java.util.List;
 
 /**
  * Generic interface implementation
  */
-public interface IRepository {
+public interface IRepository<T> {
 
-    public <T> List<T> Find(ISpecification<T> searchSpecifications);
+    public List<T> Find(ISpecification<T> searchSpecifications);
 
-    public <T> T Get(ISpecification<T> getSpecification);
+    public T Get(ISpecification<T> getSpecification);
 
-    public <T> void Save(T itemToSave);
+    public void Save(T itemToSave);
 
-    public <T> void Delete(T itemToDelete);
+    public void Delete(T itemToDelete);
 }

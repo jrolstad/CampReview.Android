@@ -1,8 +1,8 @@
 package campreview.android.commands;
 
-import campreview.android.viewmodels.Region;
-
-import java.util.ArrayList;
+import campreview.android.Specifications.AlwaysTrueSpecification;
+import campreview.android.data.IRepository;
+import campreview.android.core.models.Region;
 import java.util.List;
 
 /**
@@ -10,12 +10,15 @@ import java.util.List;
  */
 public class GetRegionsCommand implements ICommand<Request, List<Region>> {
 
-    public List<Region> Execute(Request request) {
-        List<Region> regions =  new ArrayList<Region>();
+    private IRepository<Region> _repository;
 
-        regions.add(new Region(){{Name="One";RegionId = "1";}});
-        regions.add(new Region(){{Name="Two";RegionId = "2";}});
-        regions.add(new Region(){{Name="Three";RegionId = "3";}});
+    public GetRegionsCommand(IRepository<Region> repository) {
+
+        _repository = repository;
+    }
+    public List<Region> Execute(Request request) {
+
+        List<Region> regions = _repository.Find(new AlwaysTrueSpecification<Region>());
 
         return regions;
     }
