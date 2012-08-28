@@ -6,4 +6,9 @@ public class RegionViewModel {
 
     public String Name;
 
+    @Override
+    public String toString(){
+        return Name;
+    }
+
 }

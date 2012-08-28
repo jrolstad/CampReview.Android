@@ -7,11 +7,11 @@ import java.util.List;
 /**
  * Generic interface implementation
  */
-public interface IRepository<T> {
+public interface IRepository<T extends IEntity> {
 
     public List<T> Find(ISpecification<T> searchSpecifications);
 
-    public T Get(ISpecification<T> getSpecification);
+    public T Get(String identifier);
 
     public void Save(T itemToSave);
 

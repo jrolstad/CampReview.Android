@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class InMemoryRepository<T> implements IRepository<T> {
+public class InMemoryRepository<T extends IEntity> implements IRepository<T> {
 
     private List<T> _data = new ArrayList<T>();
 
@@ -23,17 +23,14 @@ public class InMemoryRepository<T> implements IRepository<T> {
         return returnList;
     }
 
-    public T Get(ISpecification<T> getSpecification) {
-        List<T> results = Find(getSpecification);
+    public T Get(String identifier) {
+        for(T value : _data){
+            if(value.getIdentifier() == identifier){
+                return value;
+            }
+        }
 
-        if(results.size() > 0)
-        {
-            return results.get(0);
-        }
-        else
-        {
-            return null;
-        }
+        return null;
     }
 
     public void Save(T itemToSave) {
