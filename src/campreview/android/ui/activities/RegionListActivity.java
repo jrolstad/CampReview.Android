@@ -11,10 +11,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import campreview.android.R;
 import campreview.android.commands.*;
-import campreview.android.core.models.Region;
-import campreview.android.data.IRepository;
 import campreview.android.infrastructure.IoC;
+import campreview.android.mappers.IMapper;
+import campreview.android.mappers.IntentRegionViewModelMapper;
 import campreview.android.mappers.RegionViewModelMapper;
+import campreview.android.mappers.StartActivityIntentRequest;
 import campreview.android.messaging.IIntentPublisher;
 import campreview.android.messaging.IntentPublisher;
 import campreview.android.ui.views.IMessageView;
@@ -27,38 +28,38 @@ import java.util.List;
 
 public class RegionListActivity extends ListActivity {
 
-    private IRepository<Region> _repository;
     private ICommand<Request, List<RegionViewModel>> _getRegionsCommand;
     private ICommand<NewRegionRequest,NewRegionResponse> _newRegionCommand;
     private TextEditPromptView _newRegionPromptView;
     private IIntentPublisher _intentPublisher;
     private IMessageView _messageView;
+    private IMapper<StartActivityIntentRequest<RegionViewModel>, Intent> _regionViewModelIntentMapper;
 
     private ArrayAdapter<RegionViewModel> _adapter;
     private ListActivity self = this;
 
     public RegionListActivity(){
 
-        this(IoC.GetRegionRepository(),
-                new GetRegionsCommand(IoC.GetRegionRepository(), new RegionViewModelMapper()),
+        this(new GetRegionsCommand(IoC.GetRegionRepository(), new RegionViewModelMapper()),
                 new NewRegionCommand(IoC.GetRegionRepository()),
                 new TextEditPromptView(),
                 new IntentPublisher(),
-                new MessageView());
+                new MessageView(),
+                new IntentRegionViewModelMapper());
     }
 
-    public RegionListActivity(IRepository<Region> repository,
-                              ICommand<Request,List<RegionViewModel>> getRegionsCommand,
+    public RegionListActivity(ICommand<Request,List<RegionViewModel>> getRegionsCommand,
                               ICommand<NewRegionRequest, NewRegionResponse> newRegionCommand,
                               TextEditPromptView textEditPromptView,
                               IIntentPublisher intentPublisher,
-                              IMessageView messageView){
-        _repository = repository;
+                              IMessageView messageView,
+                              IMapper<StartActivityIntentRequest<RegionViewModel>,Intent> regionViewModelIntentMapper){
         _getRegionsCommand = getRegionsCommand;
         _newRegionCommand = newRegionCommand;
         _newRegionPromptView = textEditPromptView;
         _intentPublisher = intentPublisher;
         _messageView = messageView;
+        _regionViewModelIntentMapper = regionViewModelIntentMapper;
     }
 
     public void onCreate(Bundle savedInstanceState) {
@@ -110,9 +111,12 @@ public class RegionListActivity extends ListActivity {
 
     private void showRegionDetails(RegionViewModel selectedRegion) {
 
-        Intent showDetailsIntent = new Intent(this,RegionCampgroundListActivity.class);
-        showDetailsIntent.putExtra("region_id", selectedRegion.RegionId);
-        showDetailsIntent.putExtra("region_name",selectedRegion.Name);
+        StartActivityIntentRequest<RegionViewModel> request = new StartActivityIntentRequest<RegionViewModel>();
+        request.Context = this;
+        request.TargetActivity = RegionCampgroundListActivity.class;
+        request.Payload = selectedRegion;
+
+        Intent showDetailsIntent = _regionViewModelIntentMapper.Map(request);
 
         _intentPublisher.PublishStartActivity(this,showDetailsIntent);
     }

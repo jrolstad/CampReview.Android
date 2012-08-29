@@ -1,15 +1,40 @@
 package campreview.android.ui.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import campreview.android.mappers.IMapper;
+import campreview.android.mappers.RegionCampgroundListViewModelIntentMapper;
+import campreview.android.ui.views.IMessageView;
+import campreview.android.ui.views.MessageView;
+import campreview.android.viewmodels.RegionCampgroundListViewModel;
 
 public class RegionCampgroundListActivity extends Activity {
+
+    private IMapper<Intent, RegionCampgroundListViewModel> _viewModelIntentMapper;
+    private IMessageView _messageView;
+
+    private RegionCampgroundListViewModel _viewModel;
+
+    public RegionCampgroundListActivity(){
+        this(new RegionCampgroundListViewModelIntentMapper(),
+                new MessageView());
+    }
+
+    public RegionCampgroundListActivity(
+            IMapper<Intent,RegionCampgroundListViewModel> viewModelIntentMapper,
+            IMessageView messageView){
+
+        _viewModelIntentMapper = viewModelIntentMapper;
+        _messageView = messageView;
+    }
+
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
-        String id = getIntent().getStringExtra("region_id");
+        _viewModel = _viewModelIntentMapper.Map(getIntent());
 
-        Toast.makeText(getApplicationContext(), id, Toast.LENGTH_LONG).show();
+        _messageView.show(this,_viewModel.RegionName);
     }
 }
