@@ -13,17 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/infrastructure/IoC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/ui/views/IPromptView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/TextEditPromptView.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/views/TextEditPromptView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/commands/GetRegionsCommand.java" afterPath="$PROJECT_DIR$/src/campreview/android/commands/GetRegionsCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/IRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/IRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/InMemoryRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/specifications/AlwaysTrueSpecification.java" afterPath="$PROJECT_DIR$/src/campreview/android/specifications/AlwaysTrueSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/specifications/ISpecification.java" afterPath="$PROJECT_DIR$/src/campreview/android/specifications/ISpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/campreview/android/data/tests/InMemoryRepositoryTests.java" afterPath="$PROJECT_DIR$/tests/campreview/android/data/tests/InMemoryRepositoryTests.java" />
     </list>
     <ignored path="campreview.android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -902,7 +892,11 @@
       <created>1346192638377</created>
       <updated>1346192638377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cleaning up how the main activity gets its instances">
+      <created>1346214107478</created>
+      <updated>1346214107478</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -991,7 +985,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up how new regions are created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up how the main activity gets its instances" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1008,6 +1002,7 @@
     <MESSAGE value="Removing tests" />
     <MESSAGE value="Adding ability to create new region" />
     <MESSAGE value="Cleaning up how new regions are created" />
+    <MESSAGE value="Cleaning up how the main activity gets its instances" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
