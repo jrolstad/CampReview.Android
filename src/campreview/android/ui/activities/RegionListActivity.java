@@ -1,11 +1,14 @@
 package campreview.android.ui.activities;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 import campreview.android.R;
 import campreview.android.commands.*;
@@ -85,6 +88,20 @@ public class RegionListActivity extends ListActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        RegionViewModel selectedRegion = _adapter.getItem(position);
+
+        showRegionDetails(selectedRegion);
+    }
+
+    private void showRegionDetails(RegionViewModel selectedRegion) {
+        Intent showDetails = new Intent(this,RegionCampgroundListActivity.class);
+        showDetails.putExtra("region_id", selectedRegion.RegionId);
+
+        startActivity(showDetails);
     }
 
     public void refreshRegionList(){
