@@ -9,17 +9,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 import campreview.android.R;
 import campreview.android.commands.*;
 import campreview.android.core.models.Region;
 import campreview.android.data.IRepository;
 import campreview.android.infrastructure.IoC;
 import campreview.android.mappers.RegionViewModelMapper;
+import campreview.android.messaging.IIntentPublisher;
+import campreview.android.messaging.IntentPublisher;
+import campreview.android.ui.views.IMessageView;
+import campreview.android.ui.views.MessageView;
 import campreview.android.ui.views.TextEditPromptView;
 import campreview.android.viewmodels.RegionViewModel;
 
-import java.util.Date;
 import java.util.List;
 
 
@@ -29,32 +31,39 @@ public class RegionListActivity extends ListActivity {
     private ICommand<Request, List<RegionViewModel>> _getRegionsCommand;
     private ICommand<NewRegionRequest,NewRegionResponse> _newRegionCommand;
     private TextEditPromptView _newRegionPromptView;
+    private IIntentPublisher _intentPublisher;
+    private IMessageView _messageView;
 
     private ArrayAdapter<RegionViewModel> _adapter;
+    private ListActivity self = this;
 
     public RegionListActivity(){
 
         this(IoC.GetRegionRepository(),
                 new GetRegionsCommand(IoC.GetRegionRepository(), new RegionViewModelMapper()),
                 new NewRegionCommand(IoC.GetRegionRepository()),
-                new TextEditPromptView());
+                new TextEditPromptView(),
+                new IntentPublisher(),
+                new MessageView());
     }
 
     public RegionListActivity(IRepository<Region> repository,
                               ICommand<Request,List<RegionViewModel>> getRegionsCommand,
                               ICommand<NewRegionRequest, NewRegionResponse> newRegionCommand,
-                              TextEditPromptView textEditPromptView){
+                              TextEditPromptView textEditPromptView,
+                              IIntentPublisher intentPublisher,
+                              IMessageView messageView){
         _repository = repository;
         _getRegionsCommand = getRegionsCommand;
         _newRegionCommand = newRegionCommand;
         _newRegionPromptView = textEditPromptView;
-
+        _intentPublisher = intentPublisher;
+        _messageView = messageView;
     }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SeedRegions();
         _adapter = new ArrayAdapter<RegionViewModel>(getApplicationContext(), R.layout.list_region);
         refreshRegionList();
 
@@ -74,34 +83,38 @@ public class RegionListActivity extends ListActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        super.onOptionsItemSelected(item);
-
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.new_region:
                 showNewRegionPrompt();
                 return true;
             case R.id.refresh:
-                showLongToastMessage("Refreshing...");
-                refreshRegionList();
+                handleRefreshRegion();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+    private void handleRefreshRegion() {
+        _messageView.show(this, "Refreshing...");
+        refreshRegionList();
+    }
+
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        RegionViewModel selectedRegion = _adapter.getItem(position);
 
+        RegionViewModel selectedRegion = _adapter.getItem(position);
         showRegionDetails(selectedRegion);
     }
 
     private void showRegionDetails(RegionViewModel selectedRegion) {
-        Intent showDetails = new Intent(this,RegionCampgroundListActivity.class);
-        showDetails.putExtra("region_id", selectedRegion.RegionId);
 
-        startActivity(showDetails);
+        Intent showDetailsIntent = new Intent(this,RegionCampgroundListActivity.class);
+        showDetailsIntent.putExtra("region_id", selectedRegion.RegionId);
+        showDetailsIntent.putExtra("region_name",selectedRegion.Name);
+
+        _intentPublisher.PublishStartActivity(this,showDetailsIntent);
     }
 
     public void refreshRegionList(){
@@ -112,16 +125,6 @@ public class RegionListActivity extends ListActivity {
         _adapter.addAll(regions);
         _adapter.notifyDataSetChanged();
 
-    }
-
-    public void showLongToastMessage(String message){
-        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-    }
-
-    private void SeedRegions() {
-        Region region = new Region();
-        region.Name = new Date().toString();
-        _repository.Save(region);
     }
 
     private class cancelNewRegionCommand implements ICommand<Request,Response> {
@@ -145,7 +148,7 @@ public class RegionListActivity extends ListActivity {
                 refreshRegionList();
 
                 String message = "Created Region: " + response.RegionName;
-                showLongToastMessage(message);
+                _messageView.show(self,message);
             }
 
             return Response.Empty;

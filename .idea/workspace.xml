@@ -13,7 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/messaging/IIntentPublisher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/messaging/IntentPublisher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/ui/views/IMessageView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/ui/views/MessageView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" />
     </list>
     <ignored path="campreview.android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,11 +79,52 @@
       <file leaf-file-name="RegionListActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="45" selection-start="762" selection-end="762" vertical-scroll-proportion="-2.8636363">
+            <state line="9" column="30" selection-start="279" selection-end="279" vertical-scroll-proportion="0.45721924">
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="class#cancelNewRegionCommand#0;class#RegionListActivity#0" expanded="false" />
                 <element signature="class#createNewRegionCommand#0;class#RegionListActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/views/MessageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="15" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMessageView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/views/IMessageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IIntentPublisher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/messaging/IIntentPublisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="117" selection-end="133" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntentPublisher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/messaging/IntentPublisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="36" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,26 +148,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IoC.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/infrastructure/IoC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="57" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/IRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListActivity.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///Library/android-sdk-mac_x86/platforms/android-11/android.jar!/android/app/ListActivity.class">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,21 +162,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="8" selection-start="8" selection-end="26" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextEditPromptView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/views/TextEditPromptView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1175#1537#0" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
-                <element signature="e#1584#1862#0" expanded="true" />
-                <element signature="e#1843#1844#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,9 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/drawable/new_icon.xml" />
-        <option value="$PROJECT_DIR$/res/menu/region_list_menu.xml" />
         <option value="$PROJECT_DIR$/src/campreview/android/commands/NewRegionRequest.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/commands/NewRegionResponse.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/commands/NewRegionCommand.java" />
@@ -192,6 +200,9 @@
         <option value="$PROJECT_DIR$/src/campreview/android/ui/views/IPromptView.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/messaging/IIntentPublisher.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/messaging/IntentPublisher.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/ui/views/MessageView.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" />
       </list>
     </option>
@@ -365,29 +376,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="messaging" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -873,23 +862,23 @@
     <frame x="0" y="22" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.49712643" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.49137932" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39970717" sideWeight="0.49137932" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.57758623" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.49784482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.43390805" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.43103448" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5050287" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.49712643" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30028737" sideWeight="0.25036603" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30028737" sideWeight="0.670571" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.41738507" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.41738507" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.670571" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -963,39 +952,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewRegionRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="89" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewRegionResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewRegionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/NewRegionCommandTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="57" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#665#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/ICommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
@@ -1081,11 +1037,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/messaging/IntentPublisher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="45" selection-start="762" selection-end="762" vertical-scroll-proportion="-2.8636363">
+        <state line="8" column="36" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/messaging/IIntentPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="117" selection-end="133" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/views/IMessageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/views/MessageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="15" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="279" selection-end="279" vertical-scroll-proportion="0.45721924">
+          <folding>
             <element signature="class#cancelNewRegionCommand#0;class#RegionListActivity#0" expanded="false" />
             <element signature="class#createNewRegionCommand#0;class#RegionListActivity#0" expanded="false" />
           </folding>
