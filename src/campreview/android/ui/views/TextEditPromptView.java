@@ -1,4 +1,4 @@
-package campreview.android.ui.activities;
+package campreview.android.ui.views;
 
 
 import android.app.Activity;
@@ -11,9 +11,10 @@ import campreview.android.commands.ICommand;
 import campreview.android.commands.Request;
 import campreview.android.commands.Response;
 
-public class TextEditPromptView {
+public class TextEditPromptView implements IPromptView {
 
-    public void show(Activity callingActivity, String prompt, final ICommand<String,Response> successAction, final ICommand<Request,Response> cancelAction)
+    @Override
+    public void show(Activity callingActivity, String prompt, final ICommand<String, Response> successAction, final ICommand<Request, Response> cancelAction)
     {
         final FrameLayout frameLayout = new FrameLayout(callingActivity);
         final EditText newRegionNameEditor = new EditText(callingActivity);

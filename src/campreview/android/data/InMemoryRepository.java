@@ -1,6 +1,6 @@
 package campreview.android.data;
 
-import campreview.android.Specifications.ISpecification;
+import campreview.android.specifications.ISpecification;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,7 @@
 package campreview.android.data.tests;
 
 import campreview.android.core.models.Region;
-import campreview.android.Specifications.AlwaysTrueSpecification;
-import campreview.android.data.IEntity;
+import campreview.android.specifications.AlwaysTrueSpecification;
 import campreview.android.data.InMemoryRepository;
 import junit.framework.TestCase;
 import org.junit.Test;

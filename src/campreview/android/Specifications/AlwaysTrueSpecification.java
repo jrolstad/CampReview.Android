@@ -1,7 +1,5 @@
-package campreview.android.Specifications;
+package campreview.android.specifications;
 
-
-import campreview.android.Specifications.ISpecification;
 
 public class AlwaysTrueSpecification<T> implements ISpecification<T> {
 

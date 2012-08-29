@@ -10,8 +10,10 @@ import android.widget.Toast;
 import campreview.android.R;
 import campreview.android.commands.*;
 import campreview.android.core.models.Region;
-import campreview.android.data.InMemoryRepository;
+import campreview.android.data.IRepository;
+import campreview.android.infrastructure.IoC;
 import campreview.android.mappers.RegionViewModelMapper;
+import campreview.android.ui.views.TextEditPromptView;
 import campreview.android.viewmodels.RegionViewModel;
 
 import java.util.Date;
@@ -20,13 +22,31 @@ import java.util.List;
 
 public class RegionListActivity extends ListActivity {
 
-    private final InMemoryRepository<Region> _repository = new InMemoryRepository<Region>();
-    private ICommand<Request, List<RegionViewModel>> _getRegionsCommand = new GetRegionsCommand(_repository, new RegionViewModelMapper());
-    private ICommand<NewRegionRequest,NewRegionResponse> _newRegionCommand = new NewRegionCommand(_repository);
-    private TextEditPromptView _newRegionPromptView = new TextEditPromptView();
+    private IRepository<Region> _repository;
+    private ICommand<Request, List<RegionViewModel>> _getRegionsCommand;
+    private ICommand<NewRegionRequest,NewRegionResponse> _newRegionCommand;
+    private TextEditPromptView _newRegionPromptView;
 
     private ArrayAdapter<RegionViewModel> _adapter;
 
+    public RegionListActivity(){
+
+        this(IoC.GetRegionRepository(),
+                new GetRegionsCommand(IoC.GetRegionRepository(), new RegionViewModelMapper()),
+                new NewRegionCommand(IoC.GetRegionRepository()),
+                new TextEditPromptView());
+    }
+
+    public RegionListActivity(IRepository<Region> repository,
+                              ICommand<Request,List<RegionViewModel>> getRegionsCommand,
+                              ICommand<NewRegionRequest, NewRegionResponse> newRegionCommand,
+                              TextEditPromptView textEditPromptView){
+        _repository = repository;
+        _getRegionsCommand = getRegionsCommand;
+        _newRegionCommand = newRegionCommand;
+        _newRegionPromptView = textEditPromptView;
+
+    }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +56,35 @@ public class RegionListActivity extends ListActivity {
         refreshRegionList();
 
         setListAdapter(_adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.region_list_menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        super.onOptionsItemSelected(item);
+
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.new_region:
+                showNewRegionPrompt();
+                return true;
+            case R.id.refresh:
+                showLongToastMessage("Refreshing...");
+                refreshRegionList();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void refreshRegionList(){
@@ -50,32 +99,6 @@ public class RegionListActivity extends ListActivity {
 
     public void showLongToastMessage(String message){
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.region_list_menu, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.new_region:
-                showNewRegionPrompt();
-                return true;
-            case R.id.refresh:
-                showLongToastMessage("Refreshing...");
-                refreshRegionList();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
     private void SeedRegions() {

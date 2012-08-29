@@ -1,6 +1,6 @@
 package campreview.android.commands;
 
-import campreview.android.Specifications.AlwaysTrueSpecification;
+import campreview.android.specifications.AlwaysTrueSpecification;
 import campreview.android.data.IRepository;
 import campreview.android.core.models.Region;
 import campreview.android.mappers.IMapper;

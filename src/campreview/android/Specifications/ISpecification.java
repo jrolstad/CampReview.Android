@@ -1,4 +1,4 @@
-package campreview.android.Specifications;
+package campreview.android.specifications;
 
 /**
  * Created with IntelliJ IDEA.
