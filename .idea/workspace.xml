@@ -12,22 +12,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/list_campground.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/GetCampgroundsByRegionCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/GetCampgroundsByRegionRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/GetCampgroundsByRegionResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/mappers/CampgroundViewModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampgroundsByRegionCommandTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/campreview/android/mappers/tests/CampgroundViewModelMapperTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/campreview/android/viewmodels/tests/CampgroundViewModelTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/core/models/Campground.java" afterPath="$PROJECT_DIR$/src/campreview/android/core/models/Campground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/infrastructure/IoC.java" afterPath="$PROJECT_DIR$/src/campreview/android/infrastructure/IoC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/viewmodels/CampgroundViewModel.java" afterPath="$PROJECT_DIR$/src/campreview/android/viewmodels/CampgroundViewModel.java" />
-    </list>
+    <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="" />
     <ignored path="campreview.android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -128,7 +113,7 @@
       <file leaf-file-name="CampgroundForRegionSpecification.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/campreview/android/specifications/CampgroundForRegionSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="126" selection-start="517" selection-end="517" vertical-scroll-proportion="0.7364341">
+            <state line="16" column="122" selection-start="508" selection-end="508" vertical-scroll-proportion="0.62015504">
               <folding />
             </state>
           </provider>
@@ -427,28 +412,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1194,7 +1157,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/specifications/CampgroundForRegionSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="126" selection-start="517" selection-end="517" vertical-scroll-proportion="0.7364341">
+        <state line="16" column="122" selection-start="508" selection-end="508" vertical-scroll-proportion="0.62015504">
           <folding />
         </state>
       </provider>

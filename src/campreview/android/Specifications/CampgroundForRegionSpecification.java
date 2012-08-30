@@ -14,6 +14,6 @@ public class CampgroundForRegionSpecification implements ISpecification<Campgrou
         if(_regionId == null || _regionId.isEmpty())
             return false;
 
-        return item.RegionId.equalsIgnoreCase(_regionId);
+        return _regionId.equalsIgnoreCase(item.RegionId);
     }
 }
