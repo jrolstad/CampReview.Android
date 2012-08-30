@@ -2,5 +2,6 @@
 <resources>
     <string name="app_name">Campground Review</string>
     <string name="new_region_menu_caption">New</string>
+    <string name="new_campground_menu_caption">New</string>
     <string name="refresh_menu_caption">Refresh</string>
-        </resources>
+</resources>
