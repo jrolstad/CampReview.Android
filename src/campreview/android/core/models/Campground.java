@@ -4,11 +4,11 @@ import campreview.android.data.IEntity;
 
 public class Campground implements IEntity {
 
-    String CampgroundId;
+    public String CampgroundId;
 
-    String Name;
+    public String Name;
 
-    String RegionId;
+    public String RegionId;
 
     @Override
     public String getIdentifier() {

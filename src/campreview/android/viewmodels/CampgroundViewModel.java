@@ -2,9 +2,12 @@ package campreview.android.viewmodels;
 
 public class CampgroundViewModel {
 
-    String CampgroundId;
+    public String CampgroundId;
 
-    String Name;
+    public String Name;
 
-    String RegionId;
+    @Override
+    public String toString(){
+        return Name;
+    }
 }

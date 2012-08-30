@@ -40,8 +40,8 @@ public class RegionListActivity extends ListActivity {
 
     public RegionListActivity(){
 
-        this(new GetRegionsCommand(IoC.GetRegionRepository(), new RegionViewModelMapper()),
-                new NewRegionCommand(IoC.GetRegionRepository()),
+        this(new GetRegionsCommand(IoC.getRegionRepository(), new RegionViewModelMapper()),
+                new NewRegionCommand(IoC.getRegionRepository()),
                 new TextEditPromptView(),
                 new IntentPublisher(),
                 new MessageView(),
@@ -65,7 +65,7 @@ public class RegionListActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        _adapter = new ArrayAdapter<RegionViewModel>(getApplicationContext(), R.layout.list_region);
+        _adapter = new ArrayAdapter<RegionViewModel>(this, R.layout.list_region);
         refreshRegionList();
 
         setListAdapter(_adapter);
