@@ -15,7 +15,7 @@ import campreview.android.commands.requests.Request;
 import campreview.android.commands.responses.GetCampgroundsByRegionResponse;
 import campreview.android.commands.responses.NewCampgroundResponse;
 import campreview.android.commands.responses.Response;
-import campreview.android.infrastructure.IoC;
+import campreview.android.infrastructure.RepositoryBuilder;
 import campreview.android.mappers.CampgroundViewModelMapper;
 import campreview.android.mappers.IMapper;
 import campreview.android.mappers.RegionCampgroundListViewModelIntentMapper;
@@ -41,9 +41,9 @@ public class RegionCampgroundListActivity extends ListActivity {
     public RegionCampgroundListActivity(){
         this(new RegionCampgroundListViewModelIntentMapper(),
                 new MessageView(),
-                new GetCampgroundsByRegionCommand(IoC.getCampgroundRepository(),new CampgroundViewModelMapper()),
+                new GetCampgroundsByRegionCommand(RepositoryBuilder.getCampgroundRepository(),new CampgroundViewModelMapper()),
                 new TextEditPromptView(),
-                new NewCampgroundCommand(IoC.getCampgroundRepository())
+                new NewCampgroundCommand(RepositoryBuilder.getCampgroundRepository())
         );
     }
 

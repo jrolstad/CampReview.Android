@@ -1,11 +1,14 @@
 package campreview.android.infrastructure;
 
 import campreview.android.core.models.Campground;
+import campreview.android.core.models.Campsite;
 import campreview.android.core.models.Region;
 import campreview.android.data.IRepository;
 import campreview.android.data.InMemoryRepository;
 
-public class IoC {
+import java.util.UUID;
+
+public class RepositoryBuilder {
 
     private static IRepository<Region> _regionRepository = null;
 
@@ -32,6 +35,19 @@ public class IoC {
 
     }
 
+    private static IRepository<Campsite> _campsiteRepository = null;
+
+    public static IRepository<Campsite> getCampsiteRepository() {
+
+        if(_campsiteRepository == null)
+        {
+            _campsiteRepository = new InMemoryRepository<Campsite>();
+            SeedCampsites();
+        }
+        return _campsiteRepository;
+
+    }
+
     private static void SeedRegions(){
 
         Region region1 = new Region();
@@ -48,6 +64,26 @@ public class IoC {
         region3.RegionId = "3";
         region3.Name = "Idaho";
         _regionRepository.Save(region3);
+    }
+
+    private static void SeedCampsites(){
+        newCampsite("F1","1");
+        newCampsite("F2","1");
+        newCampsite("F3","1");
+        newCampsite("F4","1");
+
+        newCampsite("23","2");
+        newCampsite("32","2");
+        newCampsite("55","2");
+    }
+
+    private static void newCampsite(String siteNumber, String campgroundId){
+        Campsite site = new Campsite();
+        site.CampgroundId = campgroundId;
+        site.SiteNumber = siteNumber;
+        site.CampsiteId = UUID.randomUUID().toString();
+
+        _campsiteRepository.Save(site);
     }
 
     private static void SeedCampgrounds(){

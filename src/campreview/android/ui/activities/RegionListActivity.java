@@ -15,7 +15,7 @@ import campreview.android.commands.requests.NewRegionRequest;
 import campreview.android.commands.requests.Request;
 import campreview.android.commands.responses.NewRegionResponse;
 import campreview.android.commands.responses.Response;
-import campreview.android.infrastructure.IoC;
+import campreview.android.infrastructure.RepositoryBuilder;
 import campreview.android.mappers.IMapper;
 import campreview.android.mappers.IntentRegionViewModelMapper;
 import campreview.android.mappers.RegionViewModelMapper;
@@ -44,8 +44,8 @@ public class RegionListActivity extends ListActivity {
 
     public RegionListActivity(){
 
-        this(new GetRegionsCommand(IoC.getRegionRepository(), new RegionViewModelMapper()),
-                new NewRegionCommand(IoC.getRegionRepository()),
+        this(new GetRegionsCommand(RepositoryBuilder.getRegionRepository(), new RegionViewModelMapper()),
+                new NewRegionCommand(RepositoryBuilder.getRegionRepository()),
                 new TextEditPromptView(),
                 new IntentPublisher(),
                 new MessageView(),

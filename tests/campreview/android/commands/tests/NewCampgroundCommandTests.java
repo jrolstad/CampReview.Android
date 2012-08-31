@@ -12,7 +12,7 @@ import org.junit.Test;
 public class NewCampgroundCommandTests extends TestCase {
 
     @Test
-    public void test_when_creating_a_new_command_then_it_is_created(){
+    public void test_when_creating_a_new_campground_then_it_is_created(){
         // Arrange
         IRepository<Campground> repository = new InMemoryRepository<Campground>();
 

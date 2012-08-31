@@ -8,7 +8,7 @@ import campreview.android.core.models.Campground;
 import campreview.android.core.models.Region;
 import campreview.android.data.IRepository;
 import campreview.android.data.InMemoryRepository;
-import campreview.android.infrastructure.IoC;
+import campreview.android.infrastructure.RepositoryBuilder;
 import campreview.android.mappers.CampgroundViewModelMapper;
 import campreview.android.mappers.IMapper;
 import campreview.android.specifications.AlwaysTrueSpecification;
@@ -24,11 +24,11 @@ public class GetCampgroundsByRegionCommandTests extends TestCase {
     public void test_integration(){
         IMapper<Campground,CampgroundViewModel> mapper = new CampgroundViewModelMapper();
 
-        ICommand<GetCampgroundsByRegionRequest,GetCampgroundsByRegionResponse> command = new GetCampgroundsByRegionCommand(IoC.getCampgroundRepository(),mapper);
+        ICommand<GetCampgroundsByRegionRequest,GetCampgroundsByRegionResponse> command = new GetCampgroundsByRegionCommand(RepositoryBuilder.getCampgroundRepository(),mapper);
 
         GetCampgroundsByRegionRequest request = new GetCampgroundsByRegionRequest();
 
-        IRepository<Region> regionRepo = IoC.getRegionRepository();
+        IRepository<Region> regionRepo = RepositoryBuilder.getRegionRepository();
         List<Region> regions = regionRepo.Find(new AlwaysTrueSpecification<Region>());
 
         request.RegionId = regions.get(0).RegionId;
