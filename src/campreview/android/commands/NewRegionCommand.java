@@ -1,8 +1,9 @@
 package campreview.android.commands;
 
+import campreview.android.commands.requests.NewRegionRequest;
+import campreview.android.commands.responses.NewRegionResponse;
 import campreview.android.core.models.Region;
 import campreview.android.data.IRepository;
-import campreview.android.data.InMemoryRepository;
 
 import java.util.UUID;
 

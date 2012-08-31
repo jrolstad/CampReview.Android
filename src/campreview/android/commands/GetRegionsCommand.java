@@ -1,5 +1,6 @@
 package campreview.android.commands;
 
+import campreview.android.commands.requests.Request;
 import campreview.android.specifications.AlwaysTrueSpecification;
 import campreview.android.data.IRepository;
 import campreview.android.core.models.Region;

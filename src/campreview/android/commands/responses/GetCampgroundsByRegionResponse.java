@@ -1,4 +1,4 @@
-package campreview.android.commands;
+package campreview.android.commands.responses;
 
 import campreview.android.viewmodels.CampgroundViewModel;
 

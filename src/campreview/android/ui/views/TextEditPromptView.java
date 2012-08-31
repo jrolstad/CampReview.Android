@@ -8,8 +8,8 @@ import android.view.Gravity;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import campreview.android.commands.ICommand;
-import campreview.android.commands.Request;
-import campreview.android.commands.Response;
+import campreview.android.commands.requests.Request;
+import campreview.android.commands.responses.Response;
 
 public class TextEditPromptView implements IPromptView {
 

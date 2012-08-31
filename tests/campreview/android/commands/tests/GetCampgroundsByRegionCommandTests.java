@@ -1,8 +1,8 @@
 package campreview.android.commands.tests;
 
 import campreview.android.commands.GetCampgroundsByRegionCommand;
-import campreview.android.commands.GetCampgroundsByRegionRequest;
-import campreview.android.commands.GetCampgroundsByRegionResponse;
+import campreview.android.commands.requests.GetCampgroundsByRegionRequest;
+import campreview.android.commands.responses.GetCampgroundsByRegionResponse;
 import campreview.android.commands.ICommand;
 import campreview.android.core.models.Campground;
 import campreview.android.core.models.Region;

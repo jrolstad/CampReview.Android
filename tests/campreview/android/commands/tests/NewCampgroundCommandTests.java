@@ -1,6 +1,8 @@
 package campreview.android.commands.tests;
 
 import campreview.android.commands.*;
+import campreview.android.commands.requests.NewCampgroundRequest;
+import campreview.android.commands.responses.NewCampgroundResponse;
 import campreview.android.core.models.Campground;
 import campreview.android.data.IRepository;
 import campreview.android.data.InMemoryRepository;

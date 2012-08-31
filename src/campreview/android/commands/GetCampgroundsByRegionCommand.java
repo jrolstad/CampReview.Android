@@ -1,5 +1,7 @@
 package campreview.android.commands;
 
+import campreview.android.commands.requests.GetCampgroundsByRegionRequest;
+import campreview.android.commands.responses.GetCampgroundsByRegionResponse;
 import campreview.android.core.models.Campground;
 import campreview.android.data.IRepository;
 import campreview.android.mappers.IMapper;

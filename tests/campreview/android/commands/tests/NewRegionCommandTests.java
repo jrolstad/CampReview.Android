@@ -2,8 +2,8 @@ package campreview.android.commands.tests;
 
 import campreview.android.commands.ICommand;
 import campreview.android.commands.NewRegionCommand;
-import campreview.android.commands.NewRegionRequest;
-import campreview.android.commands.NewRegionResponse;
+import campreview.android.commands.requests.NewRegionRequest;
+import campreview.android.commands.responses.NewRegionResponse;
 import campreview.android.core.models.Region;
 import campreview.android.data.IRepository;
 import campreview.android.data.InMemoryRepository;

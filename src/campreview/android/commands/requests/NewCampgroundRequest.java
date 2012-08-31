@@ -1,4 +1,4 @@
-package campreview.android.commands;
+package campreview.android.commands.requests;
 
 public class NewCampgroundRequest {
     public String CampgroundName;

@@ -20,5 +20,6 @@
         <activity android:name=".ui.activities.RegionCampgroundListActivity">
 
         </activity>
+        <activity android:name=".ui.activities.CampgroundCampsiteListActivity"/>
     </application>
 </manifest>
