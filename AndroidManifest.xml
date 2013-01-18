@@ -12,5 +12,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name="campreview.android.activities.RegionListActivity"/>
+        <activity android:name="campreview.android.activities.CampgroundListActivity"/>
+        <activity android:name="campreview.android.activities.CampsiteListActivity"/>
     </application>
 </manifest> 
