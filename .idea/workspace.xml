@@ -13,28 +13,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1481004-8ef7-492e-a230-3456d8dff0d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/GetCampsiteByCampgroundCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/NewCampsiteCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/requests/GetCampsiteByCampgroundRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/requests/NewCampsiteRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/responses/GetCampsiteByCampgroundResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/commands/responses/NewCampsiteResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/core/models/Campsite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/mappers/CampsiteViewModelMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/specifications/CampsiteForCampgroundSpecification.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/viewmodels/CampsiteViewModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampsiteByCampgroundCommandTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampsiteCommandTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/campreview/android/mappers/tests/CampsiteViewModelMapperTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/infrastructure/IoC.java" afterPath="$PROJECT_DIR$/src/campreview/android/infrastructure/RepositoryBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/viewmodels/CampgroundCampsiteListViewModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/campsite_list_menu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/list_campsite.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/ui/views/MessageView.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/views/ToastMessageView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/CampgroundCampsiteListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/CampgroundCampsiteListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/campreview/android/mappers/tests/IntentRegionViewModelMapperTests.java" afterPath="$PROJECT_DIR$/tests/campreview/android/mappers/tests/IntentRegionViewModelMapperTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampgroundsByRegionCommandTests.java" afterPath="$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampgroundsByRegionCommandTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampgroundCommandTests.java" afterPath="$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampgroundCommandTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/campreview.android.iml" afterPath="$PROJECT_DIR$/campreview.android.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="campreview.android.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="d1481004-8ef7-492e-a230-3456d8dff0d2" time="1357308939324" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -57,6 +53,7 @@
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -72,6 +69,7 @@
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -81,114 +79,101 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="campreview.android" />
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="RegionCampgroundListActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="16" selection-start="5403" selection-end="5403" vertical-scroll-proportion="0.6066838">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CampgroundCampsiteListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/CampgroundCampsiteListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="49" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidTestCase.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/android-sdk-mac_x86/platforms/android-14/android.jar!/android/test/AndroidTestCase.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntentRegionViewModelMapperTests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/IntentRegionViewModelMapperTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="36" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntentRegionViewModelMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/mappers/IntentRegionViewModelMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Activity.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/android-sdk-mac_x86/platforms/android-14/android.jar!/android/app/Activity.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="11" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartActivityIntentRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/mappers/StartActivityIntentRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="20" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="18" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CampsiteViewModelMapperTests.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/CampsiteViewModelMapperTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="30" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetCampgroundsByRegionCommandTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampgroundsByRegionCommandTests.java">
+      <file leaf-file-name="RegionCampgroundListViewModelIntentMapperTests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/RegionCampgroundListViewModelIntentMapperTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="53" selection-start="1699" selection-end="2920" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#test_integration#0;class#GetCampgroundsByRegionCommandTests#0" expanded="false" />
-                <element signature="e#1958#1970#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetCampsiteByCampgroundCommandTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampsiteByCampgroundCommandTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="44" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1007#1017#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCampgroundCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewCampgroundCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCampsiteCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewCampsiteCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCampgroundCommandTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampgroundCommandTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="51" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#647#659#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCampsiteCommandTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampsiteCommandTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="59" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#697#707#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntentRegionViewModelMapperTests.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/IntentRegionViewModelMapperTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="32" selection-start="1200" selection-end="1201" vertical-scroll-proportion="0.74246573">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#734#751#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCampsiteRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/requests/NewCampsiteRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCampsiteResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/responses/NewCampsiteResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+            <state line="11" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,17 +189,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/campreview/android/core/models/Campsite.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/viewmodels/CampsiteViewModel.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/infrastructure/IoC.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/infrastructure/RepositoryBuilder.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/specifications/CampsiteForCampgroundSpecification.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/commands/requests/GetCampsiteByCampgroundRequest.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/commands/responses/GetCampsiteByCampgroundResponse.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/commands/GetCampsiteByCampgroundCommand.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/mappers/CampsiteViewModelMapper.java" />
         <option value="$PROJECT_DIR$/tests/campreview/android/mappers/tests/CampsiteViewModelMapperTests.java" />
         <option value="$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampsiteByCampgroundCommandTests.java" />
@@ -223,13 +205,21 @@
         <option value="$PROJECT_DIR$/src/campreview/android/commands/NewCampsiteCommand.java" />
         <option value="$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampgroundCommandTests.java" />
         <option value="$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampsiteCommandTests.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/viewmodels/CampgroundCampsiteListViewModel.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/ui/views/MessageView.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/ui/views/ToastMessageView.java" />
+        <option value="$PROJECT_DIR$/res/layout/list_campsite.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/menu/campsite_list_menu.xml" />
+        <option value="$PROJECT_DIR$/src/campreview/android/ui/activities/CampgroundCampsiteListActivity.java" />
+        <option value="$PROJECT_DIR$/tests/campreview/android/mappers/tests/IntentRegionViewModelMapperTests.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="804" />
+    <option name="height" value="807" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -257,6 +247,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -313,59 +317,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewmodels" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,154 +377,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -576,7 +384,7 @@
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/test/src/campreview/android/data/tests" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
@@ -587,8 +395,10 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -623,58 +433,9 @@
       <recent name="campreview.android.data.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in campreview.android">
-    <configuration default="false" name="GetCampgroundsByRegionCommandTests.test_integration" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="campreview.android" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="campreview.android.commands.tests" />
-      <option name="MAIN_CLASS_NAME" value="campreview.android.commands.tests.GetCampgroundsByRegionCommandTests" />
-      <option name="METHOD_NAME" value="test_integration" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NewCampgroundCommandTests.test_when_creating_a_new_command_then_it_is_created" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="campreview.android" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="campreview.android.commands.tests" />
-      <option name="MAIN_CLASS_NAME" value="campreview.android.commands.tests.NewCampgroundCommandTests" />
-      <option name="METHOD_NAME" value="test_when_creating_a_new_command_then_it_is_created" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Android Application.campreview.android">
     <configuration default="false" name="CampsiteViewModelMapperTests.test_when_mapping_campsite_to_view_model_then_it_is_mapped" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="campreview.android" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -697,6 +458,7 @@
       <method />
     </configuration>
     <configuration default="false" name="GetCampsiteByCampgroundCommandTests.test_when_getting_campsites_for_a_campground_then_only_those_in_that_campground_are_retrieved" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="campreview.android" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -719,6 +481,7 @@
       <method />
     </configuration>
     <configuration default="false" name="All in campreview.android" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="campreview.android" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -740,16 +503,53 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="IntentRegionViewModelMapperTests.test_when_mapping_a_request_to_an_intent_then_it_is_mapped" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="campreview.android" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="campreview.android.mappers.tests" />
+      <option name="MAIN_CLASS_NAME" value="campreview.android.mappers.tests.IntentRegionViewModelMapperTests" />
+      <option name="METHOD_NAME" value="test_when_mapping_a_request_to_an_intent_then_it_is_mapped" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IntentRegionViewModelMapperTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
+      <module name="campreview.android" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="campreview.android.mappers.tests.IntentRegionViewModelMapperTests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -766,12 +566,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -779,11 +574,7 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -796,14 +587,10 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -828,14 +615,10 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -847,14 +630,10 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -872,12 +651,7 @@
       </option>
       <envs />
       <patterns />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -892,12 +666,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="false" name="ui" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="ui" />
@@ -974,11 +743,11 @@
       <item index="1" class="java.lang.String" itemvalue="Android Application.campreview.android" />
       <item index="2" class="java.lang.String" itemvalue="Android Tests.tests" />
       <item index="3" class="java.lang.String" itemvalue="Android Tests.test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GetCampgroundsByRegionCommandTests.test_integration" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.NewCampgroundCommandTests.test_when_creating_a_new_command_then_it_is_created" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.CampsiteViewModelMapperTests.test_when_mapping_campsite_to_view_model_then_it_is_mapped" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.GetCampsiteByCampgroundCommandTests.test_when_getting_campsites_for_a_campground_then_only_those_in_that_campground_are_retrieved" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.All in campreview.android" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CampsiteViewModelMapperTests.test_when_mapping_campsite_to_view_model_then_it_is_mapped" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.GetCampsiteByCampgroundCommandTests.test_when_getting_campsites_for_a_campground_then_only_those_in_that_campground_are_retrieved" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.All in campreview.android" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.IntentRegionViewModelMapperTests.test_when_mapping_a_request_to_an_intent_then_it_is_mapped" />
+      <item index="8" class="java.lang.String" itemvalue="Android Tests.IntentRegionViewModelMapperTests" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1034,7 +803,11 @@
       <created>1346383720406</created>
       <updated>1346383720406</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding ability to get and create campsites">
+      <created>1346386664109</created>
+      <updated>1346386664109</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1058,29 +831,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="804" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="807" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.49712643" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.670571" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.52011496" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39970717" sideWeight="0.4827586" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.2341954" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5824964" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.4216954" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5050287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.41248205" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5021552" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.49425286" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30028737" sideWeight="0.25036603" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30028737" sideWeight="0.670571" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.76077586" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2998565" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286517" sideWeight="0.7521552" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.670571" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5718391" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.49712643" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1108,7 +884,6 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
@@ -1118,12 +893,14 @@
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moving requests and mappers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding ability to get and create campsites" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1145,6 +922,7 @@
     <MESSAGE value="Cleaning up interactions in the activity so they are batched out to components" />
     <MESSAGE value="Updating interactions with intents so that they are handled via mappers" />
     <MESSAGE value="Moving requests and mappers" />
+    <MESSAGE value="Adding ability to get and create campsites" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1154,135 +932,103 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/requests/GetCampsiteByCampgroundRequest.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/list_campground.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="40" selection-end="213" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/responses/GetCampsiteByCampgroundResponse.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/list_campsite.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="11" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/GetCampsiteByCampgroundCommand.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="20" selection-start="1626" selection-end="1647" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1435#1454#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/mappers/CampgroundViewModelMapper.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="5" column="30" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/mappers/CampsiteViewModelMapper.java">
+    <entry file="file://$PROJECT_DIR$/res/menu/campsite_list_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="77" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="44" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/CampgroundViewModelMapperTests.java">
+    <entry file="file://$PROJECT_DIR$/res/menu/campground_list_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="40" selection-end="225" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/android-sdk-mac_x86/platforms/android-14/android.jar!/android/test/AndroidTestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/CampsiteViewModelMapperTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampgroundsByRegionCommandTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/RegionCampgroundListViewModelIntentMapperTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="53" selection-start="1699" selection-end="2920" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#test_integration#0;class#GetCampgroundsByRegionCommandTests#0" expanded="false" />
-            <element signature="e#1958#1970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/GetCampsiteByCampgroundCommandTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="44" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1007#1017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewCampgroundCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/requests/NewCampsiteRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+        <state line="11" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/responses/NewCampsiteResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/mappers/StartActivityIntentRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+        <state line="6" column="20" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/commands/NewCampsiteCommand.java">
+    <entry file="jar:///Library/android-sdk-mac_x86/platforms/android-14/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
+        <state line="16" column="11" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampgroundCommandTests.java">
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/mappers/IntentRegionViewModelMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="51" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#647#659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/campreview/android/commands/tests/NewCampsiteCommandTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="59" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#697#707#0" expanded="true" />
-          </folding>
+        <state line="9" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/campreview/android/mappers/tests/IntentRegionViewModelMapperTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="32" selection-start="1200" selection-end="1201" vertical-scroll-proportion="0.74246573">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#734#751#0" expanded="true" />
-          </folding>
+        <state line="22" column="36" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="18" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/CampgroundCampsiteListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="49" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/ui/activities/RegionCampgroundListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="16" selection-start="5403" selection-end="5403" vertical-scroll-proportion="0.6066838">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,6 +1061,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1326,7 +1073,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android 3.0 Platform</last-edited>
+          <last-edited>Android 2.3.3 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

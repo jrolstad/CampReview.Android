@@ -23,7 +23,7 @@ import campreview.android.mappers.StartActivityIntentRequest;
 import campreview.android.messaging.IIntentPublisher;
 import campreview.android.messaging.IntentPublisher;
 import campreview.android.ui.views.IMessageView;
-import campreview.android.ui.views.MessageView;
+import campreview.android.ui.views.ToastMessageView;
 import campreview.android.ui.views.TextEditPromptView;
 import campreview.android.viewmodels.RegionViewModel;
 
@@ -48,7 +48,7 @@ public class RegionListActivity extends ListActivity {
                 new NewRegionCommand(RepositoryBuilder.getRegionRepository()),
                 new TextEditPromptView(),
                 new IntentPublisher(),
-                new MessageView(),
+                new ToastMessageView(),
                 new IntentRegionViewModelMapper());
     }
 

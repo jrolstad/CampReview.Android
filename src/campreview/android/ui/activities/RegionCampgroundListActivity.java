@@ -21,7 +21,7 @@ import campreview.android.mappers.IMapper;
 import campreview.android.mappers.RegionCampgroundListViewModelIntentMapper;
 import campreview.android.ui.views.IMessageView;
 import campreview.android.ui.views.IPromptView;
-import campreview.android.ui.views.MessageView;
+import campreview.android.ui.views.ToastMessageView;
 import campreview.android.ui.views.TextEditPromptView;
 import campreview.android.viewmodels.CampgroundViewModel;
 import campreview.android.viewmodels.RegionCampgroundListViewModel;
@@ -40,7 +40,7 @@ public class RegionCampgroundListActivity extends ListActivity {
 
     public RegionCampgroundListActivity(){
         this(new RegionCampgroundListViewModelIntentMapper(),
-                new MessageView(),
+                new ToastMessageView(),
                 new GetCampgroundsByRegionCommand(RepositoryBuilder.getCampgroundRepository(),new CampgroundViewModelMapper()),
                 new TextEditPromptView(),
                 new NewCampgroundCommand(RepositoryBuilder.getCampgroundRepository())
