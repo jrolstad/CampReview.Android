@@ -1,36 +1,44 @@
 package campreview.android.data.models;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
+@DatabaseTable(tableName = "region")
 public class Region {
 
-    private int _regionId;
-    private String _name;
-    private float _latitude;
-    private float _longitude;
+    @DatabaseField(id = true)
+    private int regionId;
+    @DatabaseField
+    private String name;
+    @DatabaseField
+    private float latitude;
+    @DatabaseField
+    private float longitude;
 
     public Region(){
 
     }
 
     public Region(int regionId, String name, float latitude, float longitude){
-        _regionId = regionId;
-        _name = name;
-        _latitude = latitude;
-        _longitude = longitude;
+        this.regionId = regionId;
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public int getRegionId(){
-        return _regionId;
+        return regionId;
     }
 
     public String getName(){
-        return _name;
+        return name;
     }
 
     public float getLatitude(){
-        return _latitude;
+        return latitude;
     }
 
     public float getLongitude(){
-        return _longitude;
+        return longitude;
     }
 }
