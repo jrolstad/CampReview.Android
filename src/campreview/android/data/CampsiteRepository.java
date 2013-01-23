@@ -1,20 +1,29 @@
 package campreview.android.data;
 
 import campreview.android.data.models.Campsite;
+import com.j256.ormlite.dao.Dao;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class CampsiteRepository {
 
-    public Campsite Get(int id){
-            return null;
+    private Dao<Campsite, String> dao;
+
+    public CampsiteRepository(Dao<Campsite, String> dao) {
+
+        this.dao = dao;
     }
 
-    public List<Campsite> GetByCampground(int regionId){
-        return null;
+    public Campsite Get(String id) throws SQLException {
+        return dao.queryForId(id) ;
     }
 
-    public void Save(Campsite toSave){
+    public List<Campsite> GetByCampground(String campgroundId) throws SQLException {
+        return dao.queryForEq("campgroundId",campgroundId);
+    }
 
+    public void Save(Campsite toSave) throws SQLException {
+        dao.createOrUpdate(toSave);
     }
 }

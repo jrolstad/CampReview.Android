@@ -7,7 +7,7 @@ import com.j256.ormlite.table.DatabaseTable;
 public class Region {
 
     @DatabaseField(id = true)
-    private int regionId;
+    private String regionId;
     @DatabaseField
     private String name;
     @DatabaseField
@@ -19,14 +19,14 @@ public class Region {
 
     }
 
-    public Region(int regionId, String name, float latitude, float longitude){
+    public Region(String regionId, String name, float latitude, float longitude){
         this.regionId = regionId;
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public int getRegionId(){
+    public String getRegionId(){
         return regionId;
     }
 

@@ -7,13 +7,13 @@ import com.j256.ormlite.table.DatabaseTable;
 public class Campground {
 
     @DatabaseField(id = true)
-    private int campgroundId;
+    private String campgroundId;
     @DatabaseField
     private String name;
     @DatabaseField
     private int rating;
     @DatabaseField
-    private int regionId;
+    private String regionId;
     @DatabaseField
     private float latitude;
     @DatabaseField
@@ -23,7 +23,7 @@ public class Campground {
 
     }
 
-    public Campground(int campgroundId, String name,int regionId, int rating, float latitude, float longitude){
+    public Campground(String campgroundId, String name,String regionId, int rating, float latitude, float longitude){
         this.campgroundId = campgroundId;
         this.name = name;
         this.rating = rating;
@@ -33,7 +33,7 @@ public class Campground {
 
     }
 
-    public int getCampgroundId(){
+    public String getCampgroundId(){
         return campgroundId;
     }
 
@@ -41,7 +41,7 @@ public class Campground {
         return name;
     }
 
-    public float getRegion(){
+    public String getRegion(){
            return regionId;
        }
 
