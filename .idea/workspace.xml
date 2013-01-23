@@ -20,41 +20,16 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aad8e8c-666d-493c-bae1-2a9a16431e51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/CampReview.Android.Tests.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/CampgroundRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampgroundTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/CampsiteRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampsiteTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/database/DatabaseMigrator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/database/IDaoFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/database/OrmLiteDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RegionRepositoryTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/RegionTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/ormlite_config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/rolstad.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests/campreview/android/data/CampgroundRepositoryTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests/campreview/android/data/CampsiteRepositoryTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests/campreview/android/data/RegionRepositoryTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests/campreview/android/data/models/CampgroundTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests/campreview/android/data/models/CampsiteTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/tests/campreview/android/data/models/RegionTests.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/models/Campground.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/models/Campground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/CampgroundRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/CampgroundRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/models/Campsite.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/models/Campsite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/CampsiteRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/CampsiteRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/models/Region.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/models/Region.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/RegionRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/RegionRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/campreview.android.iml" afterPath="$PROJECT_DIR$/campreview.android.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="0aad8e8c-666d-493c-bae1-2a9a16431e51" name="Default" comment="Adding separate test project so can test using the android libraries.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RepositoryFactoryTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java" afterPath="$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CampReview.Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358485865138" ignored="false" />
-    <file path="/Dummy.txt" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358974088192" ignored="false" />
+    <file path="/Dummy.txt" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358982867595" ignored="false" />
     <file path="/fragment.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358981996445" ignored="false" />
     <file path="/Region.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358982004047" ignored="false" />
     <file path="/RegionTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358974746177" ignored="false" />
@@ -62,7 +37,7 @@
     <file path="/CampgroundTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358974535180" ignored="false" />
     <file path="/Campsite.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358980480034" ignored="false" />
     <file path="/CampsiteTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358974679273" ignored="false" />
-    <file path="/RegionListActivity.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358488816454" ignored="false" />
+    <file path="/RegionListActivity.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358982459952" ignored="false" />
     <file path="/a.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358569558529" ignored="false" />
     <file path="/sample.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358488925392" ignored="false" />
     <file path="/RegionRepository.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358981533808" ignored="false" />
@@ -75,10 +50,11 @@
     <file path="/DatabaseMigrator.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358975281441" ignored="false" />
     <file path="/DatabaseHelper.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358830916702" ignored="false" />
     <file path="/IDaoFactory.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358830844631" ignored="false" />
-    <file path="/RepositoryFactory.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358978734598" ignored="false" />
+    <file path="/RepositoryFactory.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358982586996" ignored="false" />
     <file path="/DataTestSuite.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358968966659" ignored="false" />
     <file path="/HomeTest.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358974184533" ignored="false" />
     <file path="/OrmLiteDatabase.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358975297822" ignored="false" />
+    <file path="/RepositoryFactoryTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358982800447" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,28 +114,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CampgroundRepositoryTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/CampgroundRepositoryTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="40" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/RegionTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CampgroundTests.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampgroundTests.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -171,41 +125,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CampsiteRepositoryTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/CampsiteRepositoryTests.java">
+      <file leaf-file-name="DatabaseMigrator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/DatabaseMigrator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="59" selection-start="739" selection-end="869" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionRepositoryTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RegionRepositoryTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Campground.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/models/Campground.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="15" selection-start="792" selection-end="792" vertical-scroll-proportion="0.6282353">
+            <state line="14" column="49" selection-start="499" selection-end="512" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegionRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/RegionRepository.java">
+      <file leaf-file-name="IDaoFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/IDaoFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
+            <state line="6" column="17" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrmLiteDatabase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/OrmLiteDatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="7" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepositoryFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="30" selection-start="309" selection-end="326" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepositoryFactoryTests.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RepositoryFactoryTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="56" selection-start="724" selection-end="724" vertical-scroll-proportion="0.8">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Campground.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/models/Campground.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="62" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,15 +194,6 @@
         <entry file="file://$PROJECT_DIR$/src/campreview/android/data/models/Region.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CampsiteRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/data/CampsiteRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="17" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,9 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/campreview/android/data/CampgroundRepository.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/data/database/DatabaseMigrator.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/data/models/Campsite.java" />
         <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampsiteTests.java" />
         <option value="$PROJECT_DIR$/tests/tests/campreview/android/data/CampsiteRepositoryTests.java" />
@@ -272,6 +239,9 @@
         <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/RegionTests.java" />
         <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampgroundTests.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/data/models/Region.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RepositoryFactoryTests.java" />
       </list>
     </option>
   </component>
@@ -370,29 +340,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campreview.android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampReview.Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
+              <option name="myItemId" value="activities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,26 +462,7 @@
       <recent name="campreview.android.activities" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Tests.data">
-    <configuration default="false" name="CampsiteRepositoryTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
-      <module name="CampReview.Android.Tests" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="campreview.android.tests.data.CampsiteRepositoryTests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Android Tests.RepositoryFactoryTests">
     <configuration default="false" name="RegionRepositoryTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
       <module name="CampReview.Android.Tests" />
       <option name="TESTING_TYPE" value="2" />
@@ -598,6 +527,25 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="campreview.android.tests.data" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RepositoryFactoryTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
+      <module name="CampReview.Android.Tests" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="campreview.android.tests.data.RepositoryFactoryTests" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="PREFERRED_AVD" value="" />
       <option name="COMMAND_LINE" value="" />
@@ -768,19 +716,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Android Application.campreview.android" />
       <item index="1" class="java.lang.String" itemvalue="Android Tests.CampReview.Android.Tests" />
-      <item index="2" class="java.lang.String" itemvalue="Android Tests.CampsiteRepositoryTests" />
-      <item index="3" class="java.lang.String" itemvalue="Android Tests.RegionRepositoryTests" />
-      <item index="4" class="java.lang.String" itemvalue="Android Tests.tests" />
-      <item index="5" class="java.lang.String" itemvalue="Android Tests.CampgroundRepositoryTests" />
-      <item index="6" class="java.lang.String" itemvalue="Android Tests.data" />
+      <item index="2" class="java.lang.String" itemvalue="Android Tests.RegionRepositoryTests" />
+      <item index="3" class="java.lang.String" itemvalue="Android Tests.tests" />
+      <item index="4" class="java.lang.String" itemvalue="Android Tests.CampgroundRepositoryTests" />
+      <item index="5" class="java.lang.String" itemvalue="Android Tests.data" />
+      <item index="6" class="java.lang.String" itemvalue="Android Tests.RepositoryFactoryTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Android Tests.data" />
+        <item index="0" class="java.lang.String" itemvalue="Android Tests.RepositoryFactoryTests" />
         <item index="1" class="java.lang.String" itemvalue="Android Tests.data" />
-        <item index="2" class="java.lang.String" itemvalue="Android Tests.CampgroundRepositoryTests" />
-        <item index="3" class="java.lang.String" itemvalue="Android Tests.tests" />
-        <item index="4" class="java.lang.String" itemvalue="Android Tests.RegionRepositoryTests" />
+        <item index="2" class="java.lang.String" itemvalue="Android Tests.data" />
+        <item index="3" class="java.lang.String" itemvalue="Android Tests.CampgroundRepositoryTests" />
+        <item index="4" class="java.lang.String" itemvalue="Android Tests.tests" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -825,12 +773,16 @@
       <created>1358570279646</created>
       <updated>1358570279646</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding separate test project so can test using the android libraries.">
+      <created>1358982263264</created>
+      <updated>1358982263264</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="807" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -849,7 +801,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -899,7 +851,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding ORMLite to the project and adding data annotations on the data model classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding separate test project so can test using the android libraries." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -915,6 +867,7 @@
     <MESSAGE value="Creating data models and their tests" />
     <MESSAGE value="Adding repositories and related tests" />
     <MESSAGE value="Adding ORMLite to the project and adding data annotations on the data model classes" />
+    <MESSAGE value="Adding separate test project so can test using the android libraries." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -924,50 +877,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/IDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/OrmLiteDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/DatabaseMigrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="499" selection-end="512" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampsiteTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/CampgroundRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="51" selection-start="528" selection-end="571" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/data/CampsiteRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="17" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
@@ -985,15 +894,6 @@
     <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/RegionTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="46" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampgroundTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1043,8 +943,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/data/models/Campground.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="15" selection-start="792" selection-end="792" vertical-scroll-proportion="0.6282353">
+        <state line="32" column="62" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampgroundTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/DatabaseMigrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="499" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/IDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/database/OrmLiteDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="7" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="309" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RepositoryFactoryTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="56" selection-start="724" selection-end="724" vertical-scroll-proportion="0.8">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
