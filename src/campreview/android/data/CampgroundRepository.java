@@ -14,15 +14,15 @@ public class CampgroundRepository {
 
         this.dao = dao;
     }
-    public Campground Get(String id) throws SQLException {
+    public Campground Get(String id) throws Exception {
         return dao.queryForId(id);
     }
 
-    public List<Campground> GetByRegion(int regionId) throws SQLException {
+    public List<Campground> GetByRegion(int regionId) throws Exception {
         return dao.queryForEq("regionId",regionId);
     }
 
-    public void Save(Campground toSave) throws SQLException {
+    public void Save(Campground toSave) throws Exception {
         dao.createOrUpdate(toSave);
     }
 }

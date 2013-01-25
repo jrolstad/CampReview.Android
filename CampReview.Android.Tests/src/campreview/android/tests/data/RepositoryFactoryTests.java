@@ -18,19 +18,19 @@ public class RepositoryFactoryTests extends AndroidTestCase {
         _factory = new RepositoryFactory(new OrmLiteDatabase(this.getContext(),new DatabaseMigrator()));
     }
 
-    public void test_RegionRepository_gets_the_instance() throws SQLException {
+    public void test_RegionRepository_gets_the_instance() throws Exception {
         RegionRepository repository = _factory.RegionRepository();
 
         assertNotNull(repository);
     }
 
-    public void test_CampgroundRepository_gets_the_instance() throws SQLException {
+    public void test_CampgroundRepository_gets_the_instance() throws Exception {
         CampgroundRepository repository = _factory.CampgroundRepository();
 
         assertNotNull(repository);
     }
 
-    public void test_CampsiteRepository_gets_the_instance() throws SQLException {
+    public void test_CampsiteRepository_gets_the_instance() throws Exception {
         CampsiteRepository repository = _factory.CampsiteRepository();
 
         assertNotNull(repository);

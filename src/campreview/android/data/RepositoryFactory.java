@@ -25,7 +25,7 @@ public class RepositoryFactory {
         return repository;
     }
 
-    public CampsiteRepository CampsiteRepository() throws SQLException {
+    public CampsiteRepository CampsiteRepository() throws Exception {
 
         Dao<Campsite,String> dao = daoFactory.buildDao(Campsite.class);
         CampsiteRepository repository = new CampsiteRepository(dao);
@@ -33,7 +33,7 @@ public class RepositoryFactory {
         return repository;
     }
 
-    public RegionRepository RegionRepository() throws SQLException {
+    public RegionRepository RegionRepository() throws Exception {
 
             Dao<Region,String> dao = daoFactory.buildDao(Region.class);
             RegionRepository repository = new RegionRepository(dao);

@@ -1,10 +1,8 @@
 package campreview.android.activities;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import campreview.android.data.RegionRepository;
@@ -15,9 +13,7 @@ import campreview.android.data.models.Region;
 import campreview.android.mappers.IMapper;
 import campreview.android.mappers.RegionViewModelMapper;
 import campreview.android.viewmodels.RegionViewModel;
-import com.example.campreview_android.R;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +34,7 @@ public class RegionListActivity extends ListActivity {
         RepositoryFactory factory = new RepositoryFactory(new OrmLiteDatabase(this.getApplicationContext(),new DatabaseMigrator()));
         try {
             repository = factory.RegionRepository();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             Log.e("campreview.android", "failed when getting repository", e);
         }
 
@@ -46,14 +42,10 @@ public class RegionListActivity extends ListActivity {
 
     }
 
-    private void showRegions() {
+    private void showRegions(){
 
-        List<Region> regionData = null;
-        try {
-            regionData = repository.All();
-        } catch (SQLException e) {
-            Log.e("","",e);
-        }
+        try{
+        List<Region> regionData = repository.All();
 
         List<RegionViewModel> regions = new ArrayList<RegionViewModel>();
 
@@ -74,5 +66,9 @@ public class RegionListActivity extends ListActivity {
         // Assign adapter to ListView
         ListView listView = getListView();
         listView.setAdapter(adapter);
+        }
+        catch (Exception e){
+             Log.e("campreview.android","obtaining regions",e);
+        }
     }
 }

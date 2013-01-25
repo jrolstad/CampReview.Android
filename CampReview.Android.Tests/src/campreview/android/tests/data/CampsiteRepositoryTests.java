@@ -40,20 +40,20 @@ public class CampsiteRepositoryTests extends AndroidTestCase {
          context.deleteDatabase("campreview.db");
     }
 
-    public void test_GetByCampground_gets_all_campsites_in_a_campground() throws SQLException {
+    public void test_GetByCampground_gets_all_campsites_in_a_campground() throws Exception {
         List<Campsite> campsites = _repository.GetByCampground("1");
 
         assertEquals(2, campsites.size());
     }
 
-    public void test_Get_gets_a_single_campsite() throws SQLException {
+    public void test_Get_gets_a_single_campsite() throws Exception {
         Campsite campsite = _repository.Get("2");
 
         assertEquals("A4", campsite.getName());
 
     }
 
-    public void test_Save_saves_an_new_campground() throws SQLException {
+    public void test_Save_saves_an_new_campground() throws Exception {
         Campsite campsite = new Campsite("0","Cabin 2","1",3,1,1);
         _repository.Save(campsite);
 

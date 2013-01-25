@@ -17,7 +17,7 @@ public class RegionRepositoryTests extends AndroidTestCase {
     private RegionRepository _repository;
     private Dao<Region, String> _dao;
 
-    public void setUp() throws SQLException {
+    public void setUp() throws Exception {
         Context context = getContext();
         ClearDatabase(context);
 
@@ -33,25 +33,25 @@ public class RegionRepositoryTests extends AndroidTestCase {
     private void ClearDatabase(Context context){
         context.deleteDatabase("campreview.db");
     }
-    private void CreateRegion(String id, String name) throws SQLException {
+    private void CreateRegion(String id, String name) throws Exception {
         Region region = new Region(id,name,1,2);
         _dao.createOrUpdate(region);
     }
 
-    public void test_All_gets_all_regions() throws SQLException {
+    public void test_All_gets_all_regions() throws Exception {
         List<Region> allRegions = _repository.All();
 
         assertEquals(3,allRegions.size());
     }
 
-    public void test_Get_gets_a_single_region() throws SQLException {
+    public void test_Get_gets_a_single_region() throws Exception {
         Region region = _repository.Get("2");
 
         assertEquals("Oregon",region.getName());
 
     }
 
-    public void test_Save_saves_an_new_region() throws SQLException {
+    public void test_Save_saves_an_new_region() throws Exception {
         Region region = new Region("0","California",1,1);
         _repository.Save(region);
 

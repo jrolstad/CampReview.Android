@@ -16,15 +16,15 @@ public class RegionRepository {
         this.dao = dao;
     }
 
-    public Region Get(String id) throws SQLException {
+    public Region Get(String id) throws Exception {
         return dao.queryForId(id) ;
     }
 
-    public List<Region> All() throws SQLException {
+    public List<Region> All() throws Exception {
         return dao.queryForAll();
     }
 
-    public void Save(Region toSave) throws SQLException {
+    public void Save(Region toSave) throws Exception {
         dao.createOrUpdate(toSave);
     }
 

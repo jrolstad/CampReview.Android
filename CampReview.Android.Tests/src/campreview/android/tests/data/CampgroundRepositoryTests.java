@@ -19,7 +19,7 @@ public class CampgroundRepositoryTests extends AndroidTestCase {
     private CampgroundRepository _repository;
     private Dao<Campground, String> _dao;
 
-    public void setUp() throws SQLException {
+    public void setUp() throws Exception {
         Context context = this.getContext();
 
         ClearDatabase(context);
@@ -38,25 +38,25 @@ public class CampgroundRepositoryTests extends AndroidTestCase {
         context.deleteDatabase("campreview.db");
     }
 
-    private void CreateCampground(String id, String regionId, String name) throws SQLException {
+    private void CreateCampground(String id, String regionId, String name) throws Exception {
         Campground campground = new Campground(id,name,regionId,1,2,3);
         _dao.createOrUpdate(campground);
     }
 
-    public void test_GetByRegion_gets_all_campgrounds_in_a_region() throws SQLException {
+    public void test_GetByRegion_gets_all_campgrounds_in_a_region() throws Exception {
         List<Campground> campgroundsInRegion = _repository.GetByRegion(100);
 
         assertEquals(2,campgroundsInRegion.size());
     }
 
-    public void test_Get_gets_a_single_campground() throws SQLException {
+    public void test_Get_gets_a_single_campground() throws Exception {
         Campground campground = _repository.Get("2");
 
         assertEquals("Larrabee State Park",campground.getName());
 
     }
 
-    public void test_Save_saves_an_new_campground() throws SQLException {
+    public void test_Save_saves_an_new_campground() throws Exception {
         String id = UUID.randomUUID().toString();
         Campground campground = new Campground(id,"Nehalem Bay","200",3,1,1);
         _repository.Save(campground);
