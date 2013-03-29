@@ -3,6 +3,7 @@ package campreview.android.commands.regions;
 import campreview.android.commands.ICommand;
 import campreview.android.commands.QueryResponse;
 import campreview.android.commands.Request;
+import campreview.android.data.IRepository;
 import campreview.android.data.RegionRepository;
 import campreview.android.data.models.Region;
 import campreview.android.mappers.IMapper;
@@ -13,10 +14,10 @@ import java.util.List;
 
 public class GetAllRegionsCommand implements ICommand<Request,QueryResponse<RegionViewModel>> {
 
-    private RegionRepository repository;
+    private IRepository<Region,String> repository;
     private final IMapper<Region, RegionViewModel> mapper;
 
-    public GetAllRegionsCommand(RegionRepository repository, IMapper<Region,RegionViewModel> mapper){
+    public GetAllRegionsCommand(IRepository<Region,String> repository, IMapper<Region,RegionViewModel> mapper){
 
         this.repository = repository;
         this.mapper = mapper;

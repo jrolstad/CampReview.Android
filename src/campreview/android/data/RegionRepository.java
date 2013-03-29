@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RegionRepository {
+public class RegionRepository implements IRepository<Region,String> {
 
     private Dao<Region, String> dao;
 
