@@ -1,10 +1,10 @@
 package campreview.android.domain.services.regions;
 
-import campreview.android.commands.ICommand;
-import campreview.android.commands.QueryResponse;
-import campreview.android.commands.Request;
-import campreview.android.data.IRepository;
-import campreview.android.data.models.Region;
+import campreview.android.core.commands.ICommand;
+import campreview.android.core.commands.QueryResponse;
+import campreview.android.core.commands.Request;
+import campreview.android.domain.data.IRepository;
+import campreview.android.domain.models.Region;
 
 import java.util.List;
 

@@ -1,11 +1,11 @@
 package campreview.android.application.services.region;
 
-import campreview.android.commands.ICommand;
-import campreview.android.commands.QueryResponse;
-import campreview.android.commands.Request;
-import campreview.android.data.models.Region;
-import campreview.android.mappers.IMapper;
-import campreview.android.viewmodels.RegionViewModel;
+import campreview.android.core.commands.ICommand;
+import campreview.android.core.commands.QueryResponse;
+import campreview.android.core.commands.Request;
+import campreview.android.domain.models.Region;
+import campreview.android.core.mappers.IMapper;
+import campreview.android.application.viewmodels.RegionViewModel;
 
 import java.util.ArrayList;
 

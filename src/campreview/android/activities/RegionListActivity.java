@@ -8,16 +8,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import campreview.android.commands.ICommand;
-import campreview.android.commands.QueryResponse;
-import campreview.android.commands.Request;
-import campreview.android.domain.services.regions.GetAllRegionsCommand;
-import campreview.android.data.RegionRepository;
-import campreview.android.data.RepositoryFactory;
-import campreview.android.data.database.DatabaseMigrator;
-import campreview.android.data.database.OrmLiteDatabase;
-import campreview.android.mappers.RegionViewModelMapper;
-import campreview.android.viewmodels.RegionViewModel;
+import campreview.android.core.commands.ICommand;
+import campreview.android.core.commands.QueryResponse;
+import campreview.android.core.commands.Request;
+import campreview.android.domain.data.RegionRepository;
+import campreview.android.domain.data.RepositoryFactory;
+import campreview.android.domain.data.database.DatabaseMigrator;
+import campreview.android.domain.data.database.OrmLiteDatabase;
+import campreview.android.application.mappers.RegionViewModelMapper;
+import campreview.android.application.viewmodels.RegionViewModel;
 
 
 public class RegionListActivity extends ListActivity {
