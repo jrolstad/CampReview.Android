@@ -1,17 +1,17 @@
 package campreview.android.commands.regions;
 
-import campreview.android.data.models.Region;
+import campreview.android.viewmodels.RegionViewModel;
 
 public class CreateRegionResponse {
 
-    private Region region;
+    private String regionId;
 
-    public Region getRegion(){
-        return region;
+    public String getRegionId(){
+        return regionId;
     }
 
-    public CreateRegionResponse WithRegion(Region value){
-        region = value;
+    public CreateRegionResponse WithRegionId(String value){
+        regionId = value;
 
         return this;
     }

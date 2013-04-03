@@ -26,6 +26,6 @@ public class CreateRegionCommand implements ICommand<CreateRegionRequest,CreateR
 
         repository.Save(region);
 
-        return new CreateRegionResponse().WithRegion(region);
+        return new CreateRegionResponse().WithRegionId(region.getRegionId());
     }
 }

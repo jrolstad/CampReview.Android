@@ -6,15 +6,19 @@ import campreview.android.commands.regions.CreateRegionRequest;
 import campreview.android.commands.regions.CreateRegionResponse;
 import campreview.android.data.IRepository;
 import campreview.android.data.models.Region;
+import org.mockito.ArgumentCaptor;
 
+import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class CreateRegionCommandTests extends AndroidTestCase {
 
     private CreateRegionRequest request;
     private CreateRegionResponse response;
     private IRepository<Region, String> repository;
+    private Region savedRegion;
 
     public void setUp() throws Exception {
         request = new CreateRegionRequest()
@@ -27,29 +31,34 @@ public class CreateRegionCommandTests extends AndroidTestCase {
         CreateRegionCommand command = new CreateRegionCommand(repository);
 
         response = command.Execute(request);
+
+        ArgumentCaptor<Region> argument = ArgumentCaptor.forClass(Region.class);
+        verify(repository).Save(argument.capture());
+        savedRegion = argument.getValue();
     }
 
     public void test_When_creating_then_the_region_id_is_created(){
 
-        assertNotNull(response.getRegion().getRegionId());
+        assertNotNull(savedRegion.getRegionId());
     }
 
     public void test_When_creating_then_the_name_is_saved(){
 
-        assertEquals(request.getName(),response.getRegion().getName());
+        assertEquals(request.getName(),savedRegion.getName());
     }
 
     public void test_When_creating_then_the_latitude_is_saved(){
 
-        assertEquals(request.getLatitude(),response.getRegion().getLatitude());
+        assertEquals(request.getLatitude(),savedRegion.getLatitude());
     }
 
     public void test_When_creating_then_the_longitude_is_saved(){
 
-        assertEquals(request.getLongitude(),response.getRegion().getLongitude());
+        assertEquals(request.getLongitude(),savedRegion.getLongitude());
     }
 
-    public void test_When_creating_then_the_region_is_saved() throws Exception {
-        verify(repository).Save(response.getRegion());
+    public void test_When_creating_then_the_regionId_is_returned()  {
+
+        assertEquals(savedRegion.getRegionId(),response.getRegionId());
     }
 }
