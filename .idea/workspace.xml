@@ -25,45 +25,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aad8e8c-666d-493c-bae1-2a9a16431e51" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/commands/regions/GetAllRegionsCommandTests.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/commands/regions/CreateRegionCommandTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/CreateRegionCommandTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/CampgroundRepositoryTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/CampgroundRepositoryTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/CampsiteRepositoryTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/CampsiteRepositoryTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RegionRepositoryTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/RegionRepositoryTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/RepositoryFactoryTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/RepositoryFactoryTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampgroundTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/models/CampgroundTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/CampsiteTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/models/CampsiteTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/data/models/RegionTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/models/RegionTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/mappers/RegionViewModelMapperTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/mappers/RegionViewModelMapperTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/viewmodels/RegionViewModelTests.java" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/viewmodels/RegionViewModelTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/commands/ICommand.java" afterPath="$PROJECT_DIR$/src/campreview/android/core/commands/ICommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/commands/QueryResponse.java" afterPath="$PROJECT_DIR$/src/campreview/android/core/commands/QueryResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/commands/Request.java" afterPath="$PROJECT_DIR$/src/campreview/android/core/commands/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/commands/Response.java" afterPath="$PROJECT_DIR$/src/campreview/android/core/commands/Response.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/CampgroundRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/CampgroundRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/CampsiteRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/CampsiteRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/IRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/IRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/RegionRepository.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/RegionRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/RepositoryFactory.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/RepositoryFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/database/DatabaseMigrator.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/database/DatabaseMigrator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/database/IDaoFactory.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/database/IDaoFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/database/OrmLiteDatabase.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/data/database/OrmLiteDatabase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/models/Campground.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/models/Campground.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/models/Campsite.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/models/Campsite.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/data/models/Region.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/models/Region.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/mappers/IMapper.java" afterPath="$PROJECT_DIR$/src/campreview/android/core/mappers/IMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/mappers/RegionViewModelMapper.java" afterPath="$PROJECT_DIR$/src/campreview/android/application/mappers/RegionViewModelMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/campreview/android/viewmodels/RegionViewModel.java" afterPath="$PROJECT_DIR$/src/campreview/android/application/viewmodels/RegionViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/domain/services/regions/CreateRegionCommand.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/services/regions/CreateRegionCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/application/services/region/GetAllRegionsCommand.java" afterPath="$PROJECT_DIR$/src/campreview/android/application/services/region/GetAllRegionsCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/domain/services/regions/GetAllRegionsCommand.java" afterPath="$PROJECT_DIR$/src/campreview/android/domain/services/regions/GetAllRegionsCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java" afterPath="$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/services/regions/GetAllRegionsCommandTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/GetAllRegionsCommandTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CampReview.Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358485865138" ignored="false" />
-    <file path="/Dummy.txt" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364961996256" ignored="false" />
+    <file path="/Dummy.txt" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364962656674" ignored="false" />
     <file path="/fragment.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364962314894" ignored="false" />
     <file path="/Region.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358982004047" ignored="false" />
     <file path="/RegionTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358974746177" ignored="false" />
@@ -74,7 +43,7 @@
     <file path="/RegionListActivity.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364960942687" ignored="false" />
     <file path="/a.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358569558529" ignored="false" />
     <file path="/sample.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358488925392" ignored="false" />
-    <file path="/RegionRepository.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364518178989" ignored="false" />
+    <file path="/RegionRepository.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364962763471" ignored="false" />
     <file path="/CampgroundRepository.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358978692876" ignored="false" />
     <file path="/CampsiteRepository.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1358980942030" ignored="false" />
     <file path="/IRepository.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364518201082" ignored="false" />
@@ -108,7 +77,7 @@
     <file path="/GetAllRegionsCommand.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364961796778" ignored="false" />
     <file path="/CreateRegionResponse.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364959845289" ignored="false" />
     <file path="/CreateRegionCommandTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364960467664" ignored="false" />
-    <file path="/GetAllRegionsCommandTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364521121886" ignored="false" />
+    <file path="/GetAllRegionsCommandTests.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364963699532" ignored="false" />
     <file path="/RegionListViewModel.java" changelist="0aad8e8c-666d-493c-bae1-2a9a16431e51" time="1364961013179" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,66 +138,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegionListActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/activities/RegionListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="12" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1995#2012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetAllRegionsCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/services/regions/GetAllRegionsCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="474" selection-end="587" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetAllRegionsCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/application/services/region/GetAllRegionsCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1179#1196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/core/commands/QueryResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionViewModelTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/viewmodels/RegionViewModelTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CreateRegionCommandTests.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/CreateRegionCommandTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+            <state line="27" column="21" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllRegionsCommandTests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/GetAllRegionsCommandTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="36" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#728#736#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllRegionsCommandTests.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/services/regions/GetAllRegionsCommandTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="25" selection-start="805" selection-end="805" vertical-scroll-proportion="0.59640104">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1128#1136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionViewModelMapperTests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/mappers/RegionViewModelMapperTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CampgroundRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/data/CampgroundRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionRepositoryTests.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/RegionRepositoryTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/data/IRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="17" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/data/RegionRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="20" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,30 +227,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CampsiteRepositoryTests.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CampsiteRepositoryTests.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/CampsiteRepositoryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="514" selection-end="514" vertical-scroll-proportion="0.16">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateRegionCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/services/regions/CreateRegionCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionViewModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/campreview/android/application/viewmodels/RegionViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+            <state line="14" column="13" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -289,9 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/campreview/android/commands/QueryResponse.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/data/RegionRepository.java" />
-        <option value="$PROJECT_DIR$/src/campreview/android/data/IRepository.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/commands/regions/GetAllRegionsCommand.java" />
         <option value="$PROJECT_DIR$/src/campreview/android/commands/regions/CreateRegionRequest.java" />
         <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/commands/regions/GetAllRegionsCommandTests.java" />
@@ -305,6 +267,9 @@
         <option value="$PROJECT_DIR$/src/campreview/android/core/commands/QueryResponse.java" />
         <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/viewmodels/RegionViewModelTests.java" />
         <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/CampsiteRepositoryTests.java" />
+        <option value="$PROJECT_DIR$/src/campreview/android/domain/data/RegionRepository.java" />
+        <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/GetAllRegionsCommandTests.java" />
+        <option value="$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/services/regions/GetAllRegionsCommandTests.java" />
       </list>
     </option>
   </component>
@@ -383,10 +348,6 @@
               <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="regions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -407,6 +368,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,6 +426,152 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CampReview.Android.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viewmodels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="regions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campreview.android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CampReview.Android.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mappers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -544,35 +655,7 @@
       <recent name="campreview.android.activities" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Tests.tests">
-    <configuration default="false" name="CampgroundRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="campreview.android.tests.domain.data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CampReview.Android.Tests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="campreview.android.tests.domain.data" />
-      <option name="MAIN_CLASS_NAME" value="campreview.android.tests.domain.data.CampgroundRepositoryTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Android Tests.GetAllRegionsCommandTests">
     <configuration default="false" name="data" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
       <module name="CampReview.Android.Tests" />
       <option name="TESTING_TYPE" value="1" />
@@ -646,6 +729,25 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="campreview.android.tests" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GetAllRegionsCommandTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
+      <module name="CampReview.Android.Tests" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="campreview.android.tests.domain.services.regions.GetAllRegionsCommandTests" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="PREFERRED_AVD" value="" />
       <option name="COMMAND_LINE" value="" />
@@ -820,19 +922,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Android Application.campreview.android" />
       <item index="1" class="java.lang.String" itemvalue="Android Tests.CampReview.Android.Tests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CampgroundRepositoryTests" />
-      <item index="3" class="java.lang.String" itemvalue="Android Tests.data" />
-      <item index="4" class="java.lang.String" itemvalue="Android Tests.CreateRegionCommandTests" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CreateRegionCommandTests" />
-      <item index="6" class="java.lang.String" itemvalue="Android Tests.tests" />
+      <item index="2" class="java.lang.String" itemvalue="Android Tests.data" />
+      <item index="3" class="java.lang.String" itemvalue="Android Tests.CreateRegionCommandTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CreateRegionCommandTests" />
+      <item index="5" class="java.lang.String" itemvalue="Android Tests.tests" />
+      <item index="6" class="java.lang.String" itemvalue="Android Tests.GetAllRegionsCommandTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Android Tests.tests" />
-        <item index="1" class="java.lang.String" itemvalue="Android Tests.CreateRegionCommandTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CreateRegionCommandTests" />
-        <item index="3" class="java.lang.String" itemvalue="Android Tests.CreateRegionCommandTests" />
-        <item index="4" class="java.lang.String" itemvalue="Android Tests.data" />
+        <item index="0" class="java.lang.String" itemvalue="Android Tests.GetAllRegionsCommandTests" />
+        <item index="1" class="java.lang.String" itemvalue="Android Tests.tests" />
+        <item index="2" class="java.lang.String" itemvalue="Android Tests.CreateRegionCommandTests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CreateRegionCommandTests" />
+        <item index="4" class="java.lang.String" itemvalue="Android Tests.CreateRegionCommandTests" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -913,7 +1015,11 @@
       <created>1364961998670</created>
       <updated>1364961998670</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactoring code space to conform to the onion architecture paradigm">
+      <created>1364962662327</created>
+      <updated>1364962662327</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -938,7 +1044,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="807" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -958,8 +1064,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.67042255" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1007,7 +1113,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Breaking out commands into different levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code space to conform to the onion architecture paradigm" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1032,6 +1138,7 @@
     <MESSAGE value="Adding command that creates a region" />
     <MESSAGE value="Adding more tests around the Create Region Command" />
     <MESSAGE value="Breaking out commands into different levels" />
+    <MESSAGE value="Refactoring code space to conform to the onion architecture paradigm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1041,55 +1148,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/models/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="11" selection-start="431" selection-end="431" vertical-scroll-proportion="0.31473213">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/services/regions/CreateRegionRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="124" selection-end="124" vertical-scroll-proportion="0.11383928">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/CampgroundRepositoryTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="696" selection-end="734" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/android-sdk-mac_x86/platforms/android-10/android.jar!/android/test/AndroidTestCase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="630" selection-end="630" vertical-scroll-proportion="0.6213592">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/services/regions/CreateRegionResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="277" selection-end="277" vertical-scroll-proportion="0.45535713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/models/CampgroundTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="148" selection-end="148" vertical-scroll-proportion="0.15178572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/campreview/android/application/viewmodels/RegionViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/services/regions/CreateRegionCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
@@ -1142,15 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/CreateRegionCommandTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/models/CampsiteTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
@@ -1160,8 +1209,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/CampsiteRepositoryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="514" selection-end="514" vertical-scroll-proportion="0.16">
+        <state line="14" column="13" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/data/RegionRepositoryTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/data/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/data/RegionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/campreview/android/domain/data/CampgroundRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/mappers/RegionViewModelMapperTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/GetAllRegionsCommandTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="36" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/domain/services/regions/CreateRegionCommandTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="21" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampReview.Android.Tests/src/campreview/android/tests/application/services/regions/GetAllRegionsCommandTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="805" selection-end="805" vertical-scroll-proportion="0.59640104">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1128#1136#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
