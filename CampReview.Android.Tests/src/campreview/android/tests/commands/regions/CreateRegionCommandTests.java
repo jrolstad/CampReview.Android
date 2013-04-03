@@ -1,17 +1,15 @@
 package campreview.android.tests.commands.regions;
 
 import android.test.AndroidTestCase;
-import campreview.android.commands.regions.CreateRegionCommand;
-import campreview.android.commands.regions.CreateRegionRequest;
-import campreview.android.commands.regions.CreateRegionResponse;
+import campreview.android.domain.services.regions.CreateRegionCommand;
+import campreview.android.domain.services.regions.CreateRegionRequest;
+import campreview.android.domain.services.regions.CreateRegionResponse;
 import campreview.android.data.IRepository;
 import campreview.android.data.models.Region;
 import org.mockito.ArgumentCaptor;
 
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 public class CreateRegionCommandTests extends AndroidTestCase {
 

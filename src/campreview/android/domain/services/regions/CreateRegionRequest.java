@@ -1,4 +1,4 @@
-package campreview.android.commands.regions;
+package campreview.android.domain.services.regions;
 
 public class CreateRegionRequest {
 

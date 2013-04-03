@@ -1,4 +1,4 @@
-package campreview.android.commands.regions;
+package campreview.android.domain.services.regions;
 
 import campreview.android.commands.ICommand;
 import campreview.android.data.IRepository;

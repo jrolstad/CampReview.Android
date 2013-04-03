@@ -1,6 +1,4 @@
-package campreview.android.commands.regions;
-
-import campreview.android.viewmodels.RegionViewModel;
+package campreview.android.domain.services.regions;
 
 public class CreateRegionResponse {
 

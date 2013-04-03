@@ -11,7 +11,7 @@ import android.widget.Toast;
 import campreview.android.commands.ICommand;
 import campreview.android.commands.QueryResponse;
 import campreview.android.commands.Request;
-import campreview.android.commands.regions.GetAllRegionsCommand;
+import campreview.android.domain.services.regions.GetAllRegionsCommand;
 import campreview.android.data.RegionRepository;
 import campreview.android.data.RepositoryFactory;
 import campreview.android.data.database.DatabaseMigrator;
@@ -39,7 +39,7 @@ public class RegionListActivity extends ListActivity {
             RegionRepository repository = factory.RegionRepository();
             RegionViewModelMapper mapper = new RegionViewModelMapper();
 
-            allRegionsCommand = new GetAllRegionsCommand(repository,mapper);
+            //allRegionsCommand = new GetAllRegionsCommand(repository,mapper);
         }
         catch (Exception exception){
             Log.e("RegionListActivity","getDependencies",exception);
