@@ -1,7 +1,8 @@
 package campreview.android.tests.application.services.regions;
 
 import android.test.AndroidTestCase;
-import campreview.android.application.services.region.GetAllRegionsCommand;
+import campreview.android.application.services.region.GetAllRegionsViewCommand;
+import campreview.android.application.viewcommands.ViewCommandRequest;
 import campreview.android.application.viewmodels.RegionViewModel;
 import campreview.android.core.commands.ICommand;
 import campreview.android.core.commands.QueryResponse;
@@ -15,7 +16,7 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class GetAllRegionsCommandTests extends AndroidTestCase {
+public class GetAllRegionsViewCommandTests extends AndroidTestCase {
 
     public void test_when_getting_all_regions_then_they_all_are_obtained() throws Exception {
         // Arrange
@@ -36,10 +37,10 @@ public class GetAllRegionsCommandTests extends AndroidTestCase {
         when(mapper.Map(region1)).thenReturn(viewModel1);
         when(mapper.Map(region2)).thenReturn(viewModel2);
 
-        GetAllRegionsCommand command = new GetAllRegionsCommand(dataCommand,mapper);
+        GetAllRegionsViewCommand command = new GetAllRegionsViewCommand(dataCommand,mapper);
 
         // Act
-        ArrayList<RegionViewModel> response = command.Execute(Request.Empty);
+        ArrayList<RegionViewModel> response = command.Execute(ViewCommandRequest.Empty);
 
         // Assert
         assertEquals(response.size(),regions.size());

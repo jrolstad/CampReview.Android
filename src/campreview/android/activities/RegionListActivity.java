@@ -3,26 +3,21 @@ package campreview.android.activities;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import campreview.android.core.commands.ICommand;
-import campreview.android.core.commands.QueryResponse;
-import campreview.android.core.commands.Request;
-import campreview.android.domain.data.RegionRepository;
-import campreview.android.domain.data.RepositoryFactory;
-import campreview.android.domain.data.database.DatabaseMigrator;
-import campreview.android.domain.data.database.OrmLiteDatabase;
-import campreview.android.application.mappers.RegionViewModelMapper;
+import campreview.android.application.viewcommands.ViewCommandRequest;
+import campreview.android.application.viewmodels.RegionListViewModel;
 import campreview.android.application.viewmodels.RegionViewModel;
+import campreview.android.application.viewmodels.ViewModelFactory;
 
 
 public class RegionListActivity extends ListActivity {
 
-    private ICommand<Request, QueryResponse<RegionViewModel>> allRegionsCommand;
-    private QueryResponse<RegionViewModel> allRegions;
+    private RegionListViewModel viewModel;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +29,9 @@ public class RegionListActivity extends ListActivity {
 
     private void getDependencies() {
         try{
-            RepositoryFactory factory = new RepositoryFactory(new OrmLiteDatabase(this.getApplicationContext(),new DatabaseMigrator()));
-            RegionRepository repository = factory.RegionRepository();
-            RegionViewModelMapper mapper = new RegionViewModelMapper();
+            ViewModelFactory factory = new ViewModelFactory();
 
-            //allRegionsCommand = new GetAllRegionsCommand(repository,mapper);
+            viewModel = factory.getRegionListViewModel(this.getApplicationContext());
         }
         catch (Exception exception){
             Log.e("RegionListActivity","getDependencies",exception);
@@ -49,10 +42,11 @@ public class RegionListActivity extends ListActivity {
     private void showRegions(){
 
         try{
-            QueryResponse<RegionViewModel> response = allRegionsCommand.Execute(Request.Empty);
-            allRegions = response;
+            viewModel.getRefreshRegionCommand().Execute(ViewCommandRequest.Empty);
+
             ArrayAdapter<RegionViewModel> adapter =
-                    new ArrayAdapter<RegionViewModel>(this,android.R.layout.simple_list_item_1, allRegions.getResults());
+                                new ArrayAdapter<RegionViewModel>(this,android.R.layout.simple_list_item_1,
+                                        viewModel.getRegions());
 
             ListView listView = getListView();
             listView.setAdapter(adapter);
@@ -68,11 +62,20 @@ public class RegionListActivity extends ListActivity {
           @Override
           public void onItemClick(AdapterView<?> parent, View view,
             int position, long id) {
-            RegionViewModel region = allRegions.getResults().get(position)     ;
+            RegionViewModel region = viewModel.getRegions().get(position)     ;
             Toast.makeText(getApplicationContext(),
                     "Click ListItem Number " + region.getName() + "|" + region.getRegionId(), Toast.LENGTH_LONG)
               .show();
           }
         });
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        menu.add("New");
+
+        return true;
+    }
+
+
 }

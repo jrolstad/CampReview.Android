@@ -1,5 +1,7 @@
 package campreview.android.application.services.region;
 
+import campreview.android.application.viewcommands.IViewCommand;
+import campreview.android.application.viewcommands.ViewCommandRequest;
 import campreview.android.core.commands.ICommand;
 import campreview.android.core.commands.QueryResponse;
 import campreview.android.core.commands.Request;
@@ -9,12 +11,12 @@ import campreview.android.application.viewmodels.RegionViewModel;
 
 import java.util.ArrayList;
 
-public class GetAllRegionsCommand implements ICommand<Request,ArrayList<RegionViewModel>> {
+public class GetAllRegionsViewCommand implements IViewCommand<ViewCommandRequest,ArrayList<RegionViewModel>> {
 
     private ICommand<Request, QueryResponse<Region>> getAllRegionDataCommand;
     private IMapper<Region, RegionViewModel> viewModelMapper;
 
-    public GetAllRegionsCommand(ICommand<Request,QueryResponse<Region>> getAllRegionDataCommand,
+    public GetAllRegionsViewCommand(ICommand<Request,QueryResponse<Region>> getAllRegionDataCommand,
                                 IMapper<Region,RegionViewModel> viewModelMapper){
 
         this.getAllRegionDataCommand = getAllRegionDataCommand;
@@ -22,8 +24,8 @@ public class GetAllRegionsCommand implements ICommand<Request,ArrayList<RegionVi
     }
 
     @Override
-    public ArrayList<RegionViewModel> Execute(Request request) throws Exception {
-        QueryResponse<Region> regionData = getAllRegionDataCommand.Execute(request);
+    public ArrayList<RegionViewModel> Execute(ViewCommandRequest request) throws Exception {
+        QueryResponse<Region> regionData = getAllRegionDataCommand.Execute(Request.Empty);
 
         ArrayList<RegionViewModel> viewModels = new ArrayList<RegionViewModel>();
 
